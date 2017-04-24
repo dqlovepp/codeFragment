@@ -1,0 +1,73 @@
+.mainList_1{
+ min-height:1000px
+}
+.checklist{
+	position:relative;
+}
+.checklist1{
+	position:absolute;
+	width:50px;
+	height:200px;
+	background-color:#FFCCCC;
+	border-radius:10px 0 0 10px;
+	top:100px;
+	left:-50px;
+	text-align:center
+}
+.checklist2{
+	position:absolute;
+	width:50px;
+	height:200px;
+	background-color:#99CC66;
+	border-radius:10px 0 0 10px;
+	top:350px;
+	left:-50px;
+	text-align:center
+}
+.checklist3{
+	position:absolute;
+	width:50px;
+	height:200px;
+	background-color:#FF9900;
+	border-radius:10px 0 0 10px;
+	top:600px;
+	left:-50px;
+	text-align:center
+}
+.a1{
+	margin-left:80px;
+	margin-top:100px;
+	display:inline-block;
+
+}
+.c a{
+	color:#fff;
+}
+.a1 a{
+	font-size:14px;
+
+}
+
+.yema{
+	width:800px;
+	height:50px;
+	margin-top:50px;
+	margin-left:300px;
+}
+/*.c a:hover{
+	color:#000;
+}*/
+
+.d{
+	display:inline-block;
+	background-color:#ccc;
+	width:130px;
+	height:50px;
+	text-align: center;
+	line-height:50px
+}
+.yema a:hover{
+	color:#fff;
+	background-color:#167AB5
+}
+

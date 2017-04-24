@@ -1,0 +1,48 @@
+.banner{
+	width:100%;
+	margin: 0 auto
+}
+.nav2 li{
+	display:inline-block;
+	width:130px;
+	height:30px;
+	background-color:#1E89BE;
+	text-align:center;
+	padding-top:5px;
+	border-radius:10px 0;
+	margin-left:15px;
+}
+.nav2{
+	width:1000px;
+	padding-top:10px;
+	margin:0 auto;
+}
+.main1{
+    width:1000px;
+    min-height:220px;
+    background-color:#fff;
+    margin: 0 auto;
+    margin-top: 30px
+}
+.main2{
+    width:1000px;
+    min-height:250px;
+    background-color:#fff;
+    margin: 0 auto;
+
+}
+.mainlist1{
+	display:inline-block;
+	margin-top:30px;
+	margin-left:30px;
+	width:200px;
+	height:120px;
+	border:1px dashed #ccc;
+}
+.main3{
+    width:1000px;
+    min-height:200px;
+    background-color:#fff;
+    margin: 0 auto;
+
+}

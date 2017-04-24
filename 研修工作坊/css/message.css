@@ -1,0 +1,31 @@
+.mainList_1{
+ min-height:700px;
+ position:relative;
+}
+.leftLine img{
+	margin-top:80px;
+	margin-left:50px;
+}
+.leftLine{
+	display:inline-block;
+	width:240px;
+	position: absolute;
+	top:100px;
+}
+.content{
+	position: absolute;
+ 	width:600px;
+	display:inline-block;
+	left:200px;
+	top:250px;
+	text-align: center;
+
+
+}
+.rightLine{
+	display:inline-block;
+	width:240px;
+	position: absolute;
+	bottom:100px;
+	right: 0px
+}

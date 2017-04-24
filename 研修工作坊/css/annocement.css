@@ -1,0 +1,45 @@
+.mainList_1{
+	min-height:600px;
+}
+
+.list{
+	position:relative;
+	margin-top:10px;
+}
+.pa{
+	position:absolute;
+}
+.listleft{
+left:-19px
+}
+.listright{
+right: -14px
+}
+.listmid{
+	width:1000px;
+	height:45px;
+	background-color:#B8E5FB;
+}
+table{
+	margin-top: 60px;
+	margin-left:30px
+}
+thead td{
+	width:150px;
+	text-align: center;
+}
+
+thead td {
+	height:80px;
+	border-bottom:4px solid #3879D9
+}
+.theam{
+	width:400px;
+	text-align:left;
+}
+tbody td{
+	height:60px;
+	width:100px;
+	text-align:center;
+	border-bottom:1px dashed #ccc
+}
