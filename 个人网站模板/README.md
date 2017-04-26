@@ -1,3 +1,2 @@
-基于boot
-赵晓盼的个人代码库
+基于Bootstrap的个人网站模板
 <img src="images/1_1.png" />
