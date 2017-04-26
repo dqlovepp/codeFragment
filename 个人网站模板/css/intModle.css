@@ -1,0 +1,141 @@
+body{
+	background-color:#ccc;
+	margin-bottom:40px;
+}
+.navbar{
+	margin-bottom:0px;
+}
+.headerImg{
+	width:100%;
+	margin-top:50px;
+	height:200px;
+	background-image:url(../images/nav12.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:20% 30%;
+}
+.main{
+	min-height:450px;
+	border:1px dashed #ccc;
+	margin-top:20px;
+}
+.mainleft,.mainright{
+	min-height: 300px;
+	border:1px solid #FFCD41;
+	} 
+.mainleft{
+		background-color:#fff;
+		padding:0 0 30px 0;
+		box-shadow:5px 5px 10px #888;
+		
+	}
+.mainright{
+		/* background-color:#fff; */
+		/* padding:0 0 30px 0; */
+		margin-bottom:30px;
+
+	}
+.blogAssortTitle{
+	height:40px;
+	background-color:#FFCD41;
+	line-height: 40px;
+	font-size:14px;
+	margin-bottom:20px;
+	
+	}
+.blogAssortTitle>span{
+		font-weight: bold;
+		line-height: 40px;
+	}
+
+.blogAssortlist ul{
+		padding:0;
+	}
+
+.blogAssortlist  a{
+	
+	height:30px;
+	line-height:30px;
+	color:#222222;
+	text-decoration:none;
+}
+.blogAssortlist_active a{
+	font-size:16px;
+	color:#FFCD41;
+	font-weight:bold;
+}
+.blogAssortlist a:hover{
+	font-size:16px;
+	font-weight:bold;
+}
+.blogAssortlist ul li{
+	list-style:none;
+	border-bottom:1px solid #ccc;
+}
+.blogAssortlistr{
+	height: 30px;
+	line-height:30px;
+	padding-bottom:10px 0;
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+}
+.blogAssortlistr>a{
+	text-decoration: none;
+	color:#222222;
+}
+.blogAssortlistr a:hover{
+	color:#FFCD41;
+	font-size:16px;
+}
+.contlist a{
+	 text-decoration:none;
+}
+.contlist a:hover{
+	 text-decoration:none;
+}
+.contlistTitle{
+	font-size:18px;
+	line-height:30px;
+	color:#666;
+	/* background-color: #f0f; */
+	padding:10px 0px 10px 20px;
+	color:#76BC40;
+}
+.contlistTitle>span{
+	margin-right:10px;
+}
+.contlist{
+	margin:30px 0 0px 0;
+	background-color:#fff;
+	padding-bottom:10px;
+	box-shadow: 10px 10px 5px #888888;
+	border:2px dashed #ccc
+}
+.contlistImg{
+	overflow:hidden;
+}
+.contlisttext{
+	text-indent:2em;
+	height:100px;
+	line-height:25px;
+	margin-bottom: 10px;
+	/* background-color:#666 */
+	color:#999;
+	overflow:hidden;
+}
+.contlistfooter{
+	height:40px;
+	line-height:40px;
+	color:#76BC40;
+	text-align: right;
+}
+.contlistfooter>span{
+	margin-right:10px;
+
+}
+.footer{
+	height:50px;
+	background-color:#000;
+	line-height:50px;
+	color:#aaa;
+}

@@ -1,0 +1,31 @@
+body{
+	background-color:#ccc;
+	margin-bottom: 40px;
+}
+.navbar{
+	margin-bottom:0px;
+}
+.headerImg{
+	width:100%;
+	margin-top:50px;
+	height:200px;
+	background-image:url(../images/nav12.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:20% 30%;
+}
+.main{
+	min-height:600px;
+	border:1px dashed #ccc;
+	margin-top:20px
+}
+.mainleft,.mainright{
+	min-height: 300px;
+	/* border-right:1px solid #f00; */
+}
+.footer{
+	height:50px;
+	background-color:#000;
+	line-height:50px;
+	color:#fff;
+}
