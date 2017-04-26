@@ -1,0 +1,36 @@
+    <span class="action-span"><a href="brandList.html">商品品牌</a></span>
+    <span id="search_id" class="action-span1"> - 添加品牌 </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form method="post" action="__MODULE__/Brand/brandModify" enctype="multipart/form-data" >
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">品牌名称</td>
+                <td>
+                    <input type="text" name="brand_name" maxlength="60" value="{$brand.brand_name}" />
+                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">品牌网址</td>
+                <td>
+                    <input type="text" name="site_url" maxlength="60" size="40" value="{$brand.site_url}" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">品牌描述</td>
+                <td>
+                    <textarea  name="brand_desc" cols="60" rows="4"  >{$brand.brand_desc}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><br />
+                    <input type="hidden" name="brand_id"  value="{$brand.brand_id}" />
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

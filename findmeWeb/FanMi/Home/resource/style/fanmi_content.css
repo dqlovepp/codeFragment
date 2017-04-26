@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+#main_content{
+	clear: both;
+	width: 1400px;
+	height: 600px;
+	margin: 5px auto;
+	z-index: 1;
+}
+#wrapper_box{
+		clear: both;
+		width: 1400px;
+		margin-top: 5px;
+		height: 600px;
+		position: relative;
+		overflow: hidden;
+	}
+#wrapper_box ul{
+	list-style: none;
+}
+#wrapper_box ul li{
+	float: left;
+}
+#wrapper_imgs{
+		position: absolute;
+		width: 7000px;
+		left: 0;
+		top: 0;
+	}
+	#dot-wrapper{
+		position: absolute;
+		left:600px;
+		top:550px;
+		width: 240px;
+		height: 30px;
+		background-image: url("../imgs/index-sprite.png");
+		background-position: -0px -105px;
+	}
+	#dot-wrapper ul{
+		margin-top: 10px;
+		margin-left: 10px;
+		list-style-type: none;
+	}
+	#dot-wrapper ul li{
+		text-align: center;
+		width: 12px;
+		height: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.dot-wrapper-a{
+		width: 12px;
+		height: 20px;
+		display: block;
+		background-image: url("../imgs/index-sprite.png");
+		background-position: -200px -80px;
+	}
+	.cur-dot-wrapper-a{
+		width: 12px;
+		height: 20px;
+		display: block;
+		background-image: url("../imgs/index-sprite.png");
+		background-position: -212px -80px;
+	}

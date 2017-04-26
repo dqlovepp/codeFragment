@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{$Think.const.FM_ADMIN_CSS}general.css" rel="stylesheet" type="text/css" />
+<link href="{$Think.const.FM_ADMIN_CSS}main.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background: #278296;color:white">
+<form method="post" action=""onsubmit="return validate()">
+    <table cellspacing="0" cellpadding="0" style="margin-top:100px" align="center">
+        <tr>
+            <td>
+                <img src="{$Think.const.FM_ADMIN_IMG}login.png" width="178" height="256" border="0" alt="ECSHOP" />
+            </td>
+            <td style="padding-left: 50px">
+                <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td>管理员姓名：</td>
+                        <td style="width:320px;height:50px;">
+                            <input type="text" name="fm_username"  style="width:200px; height:26px;line-height:26px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>管理员密码：</td>
+                        <td style="width:320px;height:50px;">
+                            <input type="password" name="fm_password" style="width:200px; height:26px;line-height:26px;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>验证码：</td>
+                        <td style="width:320px;height:50px;  vertical-align: middle;">
+                            <input type="text" name="captcha" class="capital" style="width:200px; height:26px;line-height:26px;"/>
+                            <img src="__CONTROLLER__/verifyImg" width="110px" width="40px" border="0" onclick="this.src='__CONTROLLER__/verifyImg?'+Math.random()" title='看不清？请点一下！'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="checkbox" value="1" name="remember" id="remember" />
+                            <label for="remember">请保存我这次的登录信息。</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <input type="submit" value="进入管理中心" class="button" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+  <input type="hidden" name="act" value="signin" />
+</form>
+</body>

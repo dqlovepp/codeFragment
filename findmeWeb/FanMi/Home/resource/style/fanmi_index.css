@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+	*{
+		font-size: 14px; 
+		padding: 0;
+		border: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+		color: #FF0000;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #FFFFFF;
+	}
+	#header_cont{
+		width: 100%;
+		clear: both;
+		z-index: 100;
+		position: absolute;
+	}
+	#header_box{
+		width: 100%;
+		height: auto;
+		background-color: #1F1F1F;
+		border-bottom: solid #EEEEEE 1px;
+	}
+	#header_Area{
+		width: 1220px;
+		height: 35px;
+		padding: 0;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		color: #FFFFFF;
+	}
+	#header_Area ul{
+		list-style-type: none;
+	}
+	#header_Area ul li{
+		float: left;
+		width: auto;
+		height: 35px important;
+		line-height: 35px;
+		margin-right: 2px;
+		position: relative;
+	}
+	#header_Area ul li a{
+		color: #FFFFFF;
+		display:block;  
+		text-align: center; 
+	}
+	.header-secondLevel{
+		height: auto;
+		background-color: #999999;
+		top:30px;
+		position: absolute;
+		display: none;
+		z-index: 200;
+		
+	}
+	.header-secondLevel div{
+		width: 80px;
+		height: 30px;
+		text-align: center;
+	}
+	.header_left{
+		float: left;
+		width: auto;
+	}
+	.header_right{
+		float: right;
+		width: 300px;
+		height: 35px;
+		line-height: 35px;
+	}
+	#Customer-service{
+		width: 70px;
+		height: auto;
+		text-align: center;	
+		z-index: 500;	
+	}
+	.purchase-cat{
+		width:50px; 
+	}
+	.purchase-order{
+		width:70px; 
+	}
+	#customer-help{
+		width:70px; 
+	}
+	.user-login
+	{
+		width: auto;
+	}
+	.user-register
+	{
+		width: 70px;
+	}
+	#webLogo{
+		clear: both;
+		height: 100px;
+		width: 200px;
+		margin: 5px auto;
+	}
+	.navigator-type{
+		width: 240px;
+		height: 35px;
+		line-height: 35px;
+		margin: 0 auto;
+		clear: both;
+	}
+	.navigator-type a{
+		font-size: 20px;
+		font-weight: 800;
+		font-family: '微软雅黑';
+		letter-spacing: 5px;
+		color:#FFFFFF;
+	}
+	.navigator-type ul{
+		list-style-type: none;
+	}
+	.navigator-type ul li{
+		float: left;
+		width: 80px;
+		height: 35px;
+		line-height: 35px; 
+		text-align: center;
+		color:#FFFFFF;
+	}
+	#navgator_first{
+		width: 100%;
+		background:rgba(0, 0, 0, 0.3) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/filter:Alpha(opacity=30); background:#000000;
+		border-top:solid #999999 1px;
+		border-bottom:solid #FFFFFF 1px;
+	}
+	#navigator-box{
+		width: 100%;
+		height: 50px;
+		overflow: hidden;
+		background:rgba(0, 0, 0, 0.4) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/filter:Alpha(opacity=40); background:#000000;
+		border-top:solid #999999 1px;
+		border-bottom:solid #999999 1px;
+	}
+	.navigator-title{
+		height: 40px;
+		margin: 0 auto;
+	}
+	.navigator-title ul{
+		list-style-type: none;
+	}
+	.navigator-title ul li{
+		float: left;
+		width: auto;
+		height: 40px;
+		line-height: 40px;
+	}
+	.navigator-title ul li a{
+		display: block;
+		color: #FFFFFF;
+		text-align: center;
+		font-weight: 700;
+		letter-spacing:5px;
+	}
+	.navigator-title ul li a:hover{
+		color: #FFFFFF;
+	}
+	.navigator-title ul li .activeNav{	
+		color: #FFFFFF;	
+	}
+	#nav-index{
+		width: 100px;
+	}
+	#nav-todayTese{
+		width: 120px;
+	}
+
+	#app_footerBox{
+		clear: both;
+		width: 100%;
+		height:auto;
+		margin-top: 30px;
+		border-top: 1px solid #999999;  
+	}
+	#footer_cont{
+		clear: both;
+		width: 1220px;
+		margin: 10px auto 0 auto;
+		height: auto;
+		background-color: #EEEEEE;
+		
+		font-size: 12px;
+	}
+	#footer_cont ul{
+		list-style-type: none;
+	}
+	#footer_cont ul li{
+		float: left;
+	}
+	#footer_cont a{
+		color: #444444;
+		font-size: 12px;
+	}
+	#footer_cont a:hover{
+		color: #666666;
+		font-size: 12px;
+	}
+	#certifyinfo{
+		width: 300px;
+	}
+	#certifyinfo p{
+		height: 26px;
+		line-height: 26px;
+		color: #666666;
+		font-size: 12px;
+	}
+	.link_company{
+		width: 200px;
+		text-align: center;
+	}
+	#footer_cont dt{
+		color: #666666;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	#footer_cont dd{
+		display: block;
+		height: 24px;
+		line-height: 24px;
+	}
+	.link_company{
+		width: 200px;
+		text-align: center;
+	}
+	.link_consumer{
+		width: 200px;
+		text-align: center;
+	}
+	.link_safe{
+		width: 200px;
+		text-align: center;
+	}

@@ -1,0 +1,136 @@
+[ 2014-12-28T17:06:06+08:00 ] 10.144.21.17 /CompantWeb/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `navigation` ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-28T17:06:08+08:00 ] 10.144.21.17 /CompantWeb/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `navigation` ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-28T17:06:09+08:00 ] 10.144.21.17 /CompantWeb/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `navigation` ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2014-12-28T17:06:10+08:00 ] 10.144.21.17 /CompantWeb/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `navigation` ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php:95) D:\wamp\www\CompantWeb\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,47 @@
+    <span class="action-span"><a href="__GROUP__/Category/categoryList">商品分类</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form action="__MODULE__/Category/categoryAdd" method="post" name="addNavigate" id="addNavigate">
+    <ul>
+        <li>
+            <label>上级分类:</label>
+            <em>
+                <select name="parent_id" style="height:30px; width:100px;">
+                        <foreach name="navigation" item="val">
+                            <option value="{$val.nav_id}" >{$val.nav_name}</option>
+                        </foreach>
+                    </select>
+            </em>
+        </li>
+        <li>
+            分类名称
+            <em>
+                <input type='text' name='cat_name' maxlength="20" value='' size='27' id='cat_name'/> 
+            </em>
+            <font color="red">*</font>
+        </li>
+        <li>
+            <input type="submit" value=" 添加 " />
+            <input type="reset" value=" 重置 " />
+        </li>
+    </ul>
+    </form>
+</div>
+<script type="text/javascript">
+    $("#addNavigate").submit(function(){
+        var cat_name=$("#cat_name");  
+        if((cat_name.val()).length<2||(cat_name.val()).length>20)
+        {
+            $(cat_name).parent().next().html('参数不符合要求，长度在3~20位之间');
+            cat_name.focus();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+        
+        });
+</script>

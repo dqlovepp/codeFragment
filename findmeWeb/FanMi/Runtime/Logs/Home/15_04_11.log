@@ -1,0 +1,20 @@
+[ 2015-04-11T19:06:10+08:00 ] 192.168.51.228 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-11T19:06:12+08:00 ] 192.168.51.228 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-11T19:06:21+08:00 ] 192.168.51.228 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-11T19:06:21+08:00 ] 192.168.51.228 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+

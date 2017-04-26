@@ -1,0 +1,44 @@
+[ 2015-04-14T12:11:13+08:00 ] 123.88.225.49 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 18 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('小灿灿','广东省','广州市','白云区','111111111111111111111111111111111111111111111111111','18696475330',18,1) [ RunTime:0.000000s ]
+
+[ 2015-04-14T12:12:06+08:00 ] 123.88.225.49 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 18 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('小火山','广东省','广州市','越秀区','2222222222222222222222222222222222222222222222222222222','18696475330',18,1) [ RunTime:0.000000s ]
+
+[ 2015-04-14T12:21:47+08:00 ] 123.88.225.49 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='18' AND goods_id=32 AND goods_size='S' AND userweight=150 AND userheight=1.8 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,1,150,'S',1,18) [ RunTime:0.000000s ]
+
+[ 2015-04-14T12:21:50+08:00 ] 123.88.225.49 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='18' AND goods_id=32 AND goods_size='S' AND userweight=150 AND userheight=1.8 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,1,150,'S',1,18) [ RunTime:0.000000s ]
+

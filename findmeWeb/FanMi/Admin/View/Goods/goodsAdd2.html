@@ -1,0 +1,34 @@
+    <span class="action-span"><a href="__MODULE__/Goods/showlist" target="main-frame">商品列表</a>
+    </span>
+    <span id="search_id" class="action-span1"> - 添加新商品 </span>
+    <div style="clear:both"></div>
+</h1>
+
+<div class="tab-div">
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front" id="general-tab">1.商品信息添加</span>
+            &gt;&gt;
+            <span class="tab-front" id="general-tab" style="color:#FF0000;">2.商品图片添加</span>
+            &gt;&gt;
+            <span class="tab-front" id="general-tab"><a href="__CONTROLLER__/goodsAddStep3/id/{$goods_id}" >3.商品简介添加</a></span>
+        </p>
+    </div>
+    <div id="tabbody-div">
+        <form enctype="multipart/form-data" action="__CONTROLLER__/goodsAddStep2" method="post">
+            <!-- 商品图片 -->
+            <table width="90%" class="spanandtable" align="center">
+                <tr>
+                    <td>
+                        <input type="file" name="logo" />
+                    </td>
+                </tr>
+            </table>
+            <div class="button-div">
+                <input type="hidden" name="goods_id" value="{$goods_id}">
+                <input type="submit" value=" 确定 " class="button"/>
+                <input type="reset" value=" 重置 " class="button" />
+            </div>
+        </form>
+    </div>
+</div>

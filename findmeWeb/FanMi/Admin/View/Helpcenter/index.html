@@ -1,0 +1,22 @@
+    <span id="search_id" class="action-span1"></span>
+    <div style="clear:both"></div>
+</h1>
+<volist name="curfooter" id="footer">
+<div class="list-div">
+    <table cellspacing='1' cellpadding='3'>
+        <tr>
+            <th colspan="2" class="group-title">
+            {$footer.first.name}</th>
+        </tr> 
+        <volist name="footer.second" id="ftsecond">
+         <tr>
+            <td width="20%">{$ftsecond['name']}</td>
+            <td width="80%">
+            <a href="__CONTROLLER__/look/id/{$ftsecond['id']}.html">查看</a>
+            <a href="__CONTROLLER__/modify/id/{$ftsecond['id']}.html">修改</a>
+            </td>
+        </tr>    
+       </volist>         
+    </table>
+</div>
+</volist>

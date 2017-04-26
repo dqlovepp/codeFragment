@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>泛米管理中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{$Think.const.FM_ADMIN_CSS}general.css" rel="stylesheet" type="text/css" />
+<link href="{$Think.const.FM_ADMIN_CSS}main.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.top{clear:both; height:76px; width:100%;}
+.main{clear: both; width: 100%;  height: auto;}
+.main ul{list-style: none; height: auto;}
+#mainLeft{float: left;vertical-align: top; width:15%; height: auto;}
+#mainRight{float: right;vertical-align: top; width: 85%; height: auto; overflow: hidden;}
+#footer {
+  clear: both;
+  background: #F4FaFb;
+  border: 1px solid #BBDDE5;
+  padding: 15px;
+  color: #9CACAF;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+</style>
+<script type="text/javascript" src="{$Think.const.APP_COMMON_JS}jquery-1.9.1.js"></script>
+<script type="text/javascript">
+// $(function(){
+// 	var mainRight=document.getElementById('mainRight');
+// 	var mainLeft=document.getElementById('mainLeft');
+// //	mainRight.style.width=document.documentElement.clientWidth-mainLeft.offsetWidth-60+'px';
+// });
+//  window.onresize=function(){  
+//   	var mainRight=document.getElementById('mainRight');
+// 	var mainLeft=document.getElementById('mainLeft');
+// //	mainRight.style.width=document.documentElement.clientWidth-mainLeft.offsetWidth-60+'px';
+//   }  
+</script>
+</head>
+<body style="background-color:#278296;margin:0; padding:0; border:0">
+<div class="top">
+	 <include file="Index:top" />
+</div>
+<div class="main">
+	<ul>
+		<li id="mainLeft"><include file="Index:menu" /></li>
+		<li id="mainRight">
+			<h1>
+    			<span class="action-span1"><a href="__MODULE__/Index/index.html">泛米网管理中心</a> </span>
+			{__CONTENT__}
+		</li>
+		<li style="clear:both;"></li> 
+	</ul>
+</div>
+
+<div id="footer">
+版权所有 &copy; 武汉泛米科技</div>
+</body>
+</html>

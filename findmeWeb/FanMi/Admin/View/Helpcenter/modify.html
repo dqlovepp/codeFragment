@@ -1,0 +1,32 @@
+    <span id="search_id" class="action-span1"></span>
+    <div style="clear:both"></div>
+</h1>
+<div class="list-div">
+    <form action="__CONTROLLER__/savedata.html" method="post"> 
+    <table cellspacing='1' cellpadding='3' width="100%">
+        <tr>
+            <th class="group-title">
+            {$curhelp.parent.name}&gt;&gt;{$curhelp.child.name}</th>
+        </tr> 
+         <tr>
+            <td width="100%">
+             <textarea id="hcontent" name="hcontent" style="width:95%;">{$curhelp.child.content|htmlspecialchars_decode|html_entity_decode}</textarea>
+            </td>
+        </tr> 
+        <tr>
+            <td align="center">
+                <input type="hidden" value="{$curhelp.child.id}"  name="id">
+                <input type="submit" value="提交" style="width:100px; height:30px">
+                <input type="reset" value="重置" style="width:100px; height:30px">
+            </td>
+        </tr>      
+    </table>
+    </form>
+</div>
+ <script type="text/javascript" src="{$Think.const.URL}Public/JS/jquery-1.9.1.js"></script>
+<script type="text/javascript" charset="utf-8" src="{$Think.const.URL}Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="{$Think.const.URL}Public/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="{$Think.const.URL}Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script>
+UE.getEditor('hcontent');
+</script>

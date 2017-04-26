@@ -1,0 +1,158 @@
+<style type="text/css">
+#tabbar-div {
+  background:#278296;
+  padding-left:10px;
+  height:21px;
+  padding-top:0px;
+}
+#tabbar-div p {
+  margin:1px 5px 0 0;
+  background:#80BDCB;
+}
+.tab-front {
+  background:#80BDCB;
+  line-height:20px;
+  font-weight:bold;
+  padding:4px 15px 4px 18px;
+  border-right:2px solid #335b64;
+  cursor:hand;
+  cursor:pointer;
+}
+.tab-back {
+  color:#F4FAFB;
+  line-height:20px;
+  padding:4px 15px 4px 18px;
+  cursor:hand;
+  cursor:pointer;
+}
+.tab-hover {
+  color:#F4FAFB;
+  line-height:20px;
+  padding:4px 15px 4px 18px;
+  cursor:hand;
+  cursor:pointer;
+  background:#2F9DB5;
+}
+#top-div
+{
+  padding:3px 0 2px;
+  background:#BBDDE5;
+  margin:5px;
+  text-align:center;
+}
+#main-div {
+  border:1px solid #345C65;
+  padding:5px;
+  margin:5px;
+  background:#FFF;
+}
+#menu-list {
+  padding:0;
+  margin:0;
+}
+#menu-list ul {
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  color:#335B64;
+}
+#menu-list li {
+  padding-left:16px;
+  line-height:16px;
+  cursor:hand;
+  cursor:pointer;
+}
+#main-div a:visited, #menu-list a:link, #menu-list a:hover {
+  color:#335B64
+  text-decoration:none;
+}
+#menu-list a:active {
+  color:#EB8A3D;
+}
+.explode {
+  background:url({$Think.const.FM_ADMIN_IMG}menu_minus.gif) no-repeat 0px 3px;
+  font-weight:bold;
+}
+.collapse {
+  background:url({$Think.const.FM_ADMIN_IMG}menu_plus.gif) no-repeat 0px 3px;
+  font-weight:bold;
+}
+.menu-item {
+  background:url({$Think.const.FM_ADMIN_IMG}menu_arrow.gif) no-repeat 0px 3px;
+  font-weight:normal;
+  height: 20px;
+  margin-top: 2px;
+}
+#help-title {
+  font-size:14px;
+  color:#000080;
+  margin:5px 0;
+  padding:0px;
+}
+#help-content {
+  margin:0;
+  padding:0;
+}
+.tips {
+  color:#CC0000;
+}
+.link {
+  color:#000099;
+}
+</style>
+<div id="tabbar-div">
+    <p>
+        <span style="float:right; padding:3px 5px;" >
+            <a href="javascript:toggleCollapse();">
+                <img id="toggleImg" src="{$Think.const.FM_ADMIN_IMG}menu_minus.gif" width="9" height="9" border="0" alt="闭合" />
+            </a>
+        </span>
+        <span class="tab-front" id="menu-tab">菜单</span>
+    </p>
+</div>
+<div id="main-div">
+    <div id="menu-list">
+        <ul id="menu-ul">
+            <li class="explode" key="02_cat_and_goods" name="menu">
+            商品管理
+                <ul>
+                    <li class="menu-item"><a href="__MODULE__/Goods/showlist" target="_self">商品列表</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Goods/goodsAdd" target="_self">添加新商品</a></li>
+                    
+                    <li class="menu-item"><a href="__MODULE__/Category/categoryList" target="_self">商品分类</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Category/categoryAdd" target="_self">添加商品分类</a></li>                   
+                    <li class="menu-item"><a href="__MODULE__/brand/brandList" target="_self">商品品牌</a></li>
+                    <li class="menu-item"><a href="__MODULE__/brand/brandAdd" target="_self">添加品牌分类</a></li>
+                </ul>
+            </li>
+            <li class="explode" key="04_order" name="menu">
+            订单管理
+                <ul>
+                    <li class="menu-item"><a href="__MODULE__/Order/orderList.html">订单列表</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Order/notPost.html" >待发货单列表</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Order/notPay.html" >待支付单列表</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Order/notSure.html" >未确认订单:</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Order/haveSure.html" >已成交订单:</a></li>
+                    <li class="menu-item"><a href="__MODULE__/Order/returnGoods.html" >退货单列表</a></li>
+                </ul>
+            </li>
+            <li class="explode" key="08_members" name="menu">
+            会员管理
+                <ul>
+                    <li class="menu-item"><a href="__MODULE__/User/memberList.html" >会员列表</a></li>
+                    <li class="menu-item"><a href="userMessage.html" >会员留言</a></li>
+                </ul>
+            </li>
+            <li class="explode" key="08_members" name="menu">
+            帮助中心
+                <ul>
+                    <li class="menu-item"><a href="__MODULE__/Helpcenter/index.html" >帮助中心管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="help-div" style="display:none">
+        <h1 id="help-title"></h1>
+        <div id="help-content"></div>
+    </div>
+</div>

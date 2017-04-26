@@ -1,0 +1,368 @@
+[ 2015-03-16T12:02:19+08:00 ] 192.168.51.228 /Home/Products/goods/catalog/1/Category/1/id/__MODULE__/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_goods [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_goods` WHERE ( goods_id=__MODULE__ ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '__MODULE__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_goods` WHERE ( goods_id=__MODULE__ ) LIMIT 1  
+SQL: DESCRIBE fm_goods_pic [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_goods_pic` WHERE ( goods_id=__MODULE__ )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '__MODULE__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_goods_pic` WHERE ( goods_id=__MODULE__ ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:05:27+08:00 ] 192.168.51.228 /Home/Products/goods/catalog/1/Category/1/id/__MODULE__/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_goods [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_goods` WHERE ( goods_id=__MODULE__ ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '__MODULE__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_goods` WHERE ( goods_id=__MODULE__ ) LIMIT 1  
+SQL: DESCRIBE fm_goods_pic [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_goods_pic` WHERE ( goods_id=__MODULE__ )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '__MODULE__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_goods_pic` WHERE ( goods_id=__MODULE__ ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:06:31+08:00 ] 192.168.51.228 /Home/Products/goods/catalog/1/Category/1/id/__MODULE__/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_goods [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_goods` WHERE ( goods_id=__MODULE__ ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '__MODULE__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_goods` WHERE ( goods_id=__MODULE__ ) LIMIT 1  
+SQL: DESCRIBE fm_goods_pic [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_goods_pic` WHERE ( goods_id=__MODULE__ )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '__MODULE__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_goods_pic` WHERE ( goods_id=__MODULE__ ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:12:28+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:14:05+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`userip`) VALUES (32,4,80,'sizeS',1,0,'192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:14:35+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`userip`) VALUES (32,4,80,'sizeS',1,0,'192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:16:26+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`userip`) VALUES (32,4,80,'sizeS',1,0,'192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:58:57+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`userip`) VALUES (32,4,75,'sizeS',1,6,'192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:59:23+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`userip`) VALUES (32,4,75,'sizeS',1,6,'192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T12:59:43+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`userip`) VALUES (32,2,80,'sizeS',1,0,'192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:02:37+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,70,'sizeXL',1,0,'6aod241a59b6uj16iein4pgb90','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:02:56+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,70,'sizeM',2,0,'6aod241a59b6uj16iein4pgb90','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:03:28+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,80,'sizeS',1,0,'tjmhn0gfmqki6pivsqpcpolfl6','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:20:53+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id=6aod241a59b6uj16iein4pgb90 AND goods_id=32 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '6aod241a59b6uj16iein4pgb90' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_cart` WHERE ( session_id=6aod241a59b6uj16iein4pgb90 AND goods_id=32 ) 
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,65,'sizeXL',1,0,'6aod241a59b6uj16iein4pgb90','192.168.51.228') [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php on line 41 and defined D:\wamp\www\web\ThinkPHP\Library\Think\Controller.class.php 第 209 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\web\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2015-03-16T13:24:52+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='6aod241a59b6uj16iein4pgb90' AND goods_id=32 )  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php on line 42 and defined D:\wamp\www\web\ThinkPHP\Library\Think\Controller.class.php 第 209 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\web\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2015-03-16T13:25:48+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='6aod241a59b6uj16iein4pgb90' AND goods_id=32 )  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php on line 42 and defined D:\wamp\www\web\ThinkPHP\Library\Think\Controller.class.php 第 209 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\web\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2015-03-16T13:26:45+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='6aod241a59b6uj16iein4pgb90' AND goods_id=32 )  [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:28:13+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 )  [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:28:31+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 )  [ RunTime:0.000000s ]
+
+[ 2015-03-16T13:28:55+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,5,70,'sizeS',1,0,'tjmhn0gfmqki6pivsqpcpolfl6','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T14:35:21+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='6aod241a59b6uj16iein4pgb90' AND goods_id=32 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,3,70,'sizeS',1,0,'6aod241a59b6uj16iein4pgb90','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T14:35:31+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 )  [ RunTime:0.000000s ]
+SQL: UPDATE `fm_cart` SET `amount`=amount+1 WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 ) [ RunTime:0.000000s ]
+
+[ 2015-03-16T14:35:36+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 )  [ RunTime:0.000000s ]
+SQL: UPDATE `fm_cart` SET `amount`=amount+1 WHERE ( session_id='tjmhn0gfmqki6pivsqpcpolfl6' AND goods_id=32 ) [ RunTime:0.000000s ]
+
+[ 2015-03-16T15:06:50+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 AND goods_size=sizeS AND userweight=70 AND userheight=2 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'sizeS' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_cart` WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 AND goods_size=sizeS AND userweight=70 AND userheight=2 ) 
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,70,'sizeS',1,0,'uc719ub5hhtq59psui557v4sv6','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T15:07:03+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 AND goods_size=sizeS AND userweight=70 AND userheight=2 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'sizeS' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `fm_cart` WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 AND goods_size=sizeS AND userweight=70 AND userheight=2 ) 
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,70,'sizeS',1,0,'uc719ub5hhtq59psui557v4sv6','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T15:07:51+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 AND goods_size='sizeS' AND userweight=70 AND userheight=2 )  [ RunTime:0.000000s ]
+SQL: UPDATE `fm_cart` SET `amount`=amount+1 WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 ) [ RunTime:0.000000s ]
+
+[ 2015-03-16T15:08:00+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( session_id='uc719ub5hhtq59psui557v4sv6' AND goods_id=32 AND goods_size='sizeS' AND userweight=85 AND userheight=2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`,`session_id`,`userip`) VALUES (32,2,85,'sizeS',1,0,'uc719ub5hhtq59psui557v4sv6','192.168.51.228') [ RunTime:0.000000s ]
+
+[ 2015-03-16T20:34:40+08:00 ] 119.96.204.161 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: gid D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: gaid D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: gn D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: gaStr D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php 第 27 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T21:30:57+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T21:34:33+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-16T21:38:45+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.031200s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='11' AND goods_id=32 AND goods_size='sizeS' AND userweight=75 AND userheight=2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,2,75,'sizeS',1,11) [ RunTime:0.000000s ]
+
+[ 2015-03-16T21:38:55+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='11' AND goods_id=32 AND goods_size='sizeS' AND userweight=75 AND userheight=2 )  [ RunTime:0.000000s ]
+SQL: UPDATE `fm_cart` SET `amount`=amount+1 WHERE ( member_id='11' AND goods_id=32 AND goods_size='sizeS' AND userweight=75 AND userheight=2 ) [ RunTime:0.000000s ]
+
+[ 2015-03-16T21:39:49+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='11' AND goods_id=32 AND goods_size='sizeM' AND userweight=75 AND userheight=2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,2,75,'sizeM',1,11) [ RunTime:0.000000s ]
+

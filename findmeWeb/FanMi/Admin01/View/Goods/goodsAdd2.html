@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>泛米 管理中心 - 添加新商品 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{$Think.const.FM_ADMIN_CSS}general.css" rel="stylesheet" type="text/css" />
+<link href="{$Think.const.FM_ADMIN_CSS}main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$Think.const.URL}Public/JS/jquery-1.9.1.js"></script>
+</head>
+<body>
+<h1>
+    <span class="action-span"><a href="__MODULE__/Goods/showlist" target="main-frame">商品列表</a>
+    </span>
+    <span class="action-span1"><a href="__GROUP__">泛米 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加新商品 </span>
+    <div style="clear:both"></div>
+</h1>
+
+<div class="tab-div">
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front" id="general-tab">1.商品信息添加</span>
+            &gt;&gt;
+            <span class="tab-front" id="general-tab" style="color:#FF0000;">2.商品图片添加</span>
+            &gt;&gt;
+            <span class="tab-front" id="general-tab"><a href="__CONTROLLER__/goodsAddStep3/id/{$goods_id}" target="main-frame">3.商品简介添加</a></span>
+        </p>
+    </div>
+    <div id="tabbody-div">
+        <form enctype="multipart/form-data" action="__CONTROLLER__/goodsAddStep2" method="post">
+            <!-- 商品图片 -->
+            <table width="90%" class="spanandtable" align="center">
+                <tr>
+                    <td>
+                        <input type="file" name="logo" />
+                    </td>
+                </tr>
+            </table>
+            <div class="button-div">
+                <input type="hidden" name="goods_id" value="{$goods_id}">
+                <input type="submit" value=" 确定 " class="button"/>
+                <input type="reset" value=" 重置 " class="button" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="footer">
+版权所有 &copy; 2015 泛米网络科技有限公司，并保留所有权利。</div>
+</body>
+</html>

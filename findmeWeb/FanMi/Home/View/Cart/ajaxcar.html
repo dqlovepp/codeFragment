@@ -1,0 +1,45 @@
+<empty name="goodsData">
+	<div class="prompt">
+		您的购物车中还没有商品，赶紧选购吧！
+	</div>
+<else />
+	<div class="myfamicart">
+		<div id="cart_heard">
+			小计:<font style="color:#E4393C">￥{$totalPrice}</font>
+		</div>
+		<div id="cart_body">
+		<table>
+			<tbody>
+				<php>
+					$allgoodsSum=0;
+				</php>
+				<volist name="goodsData" id="cart">
+					<PHP>					
+						$allgoodsSum+=$cart['amount'];
+					</PHP>
+					<tr gid="{$cart.goods.goods_id}" gsize="{$cart.goods_size}">
+						<td class="cart_goodsname"><a href="__MODULE__/Products/goods/catalog/{$cart.goods.catalog}/Category/{$cart.goods.goods_category_id}/id/{$cart.goods.goods_id}.html"><img src="{$Think.const.URL}Public/{$cart.goods.goods_small_img}" alt="" /></a><strong><a href="__MODULE__/Products/goods/catalog/{$cart.goods.catalog}/Category/{$cart.goods.goods_category_id}/id/{$cart.goods.goods_id}.html">{$cart.goods.goods_name}</a></strong></td>
+
+						<td class="cart_goodsprice">
+						<a href="javascript:;"><font style="color:#E4393C">￥{$cart.goods.goods_price}</font>&times;{$cart.amount}
+						</a>
+						<a href="javascript:;" class="adel">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div style="clear:both; border-top:1px solid #E7E3E7;width:100%;height:0;
+							margin: 5px auto; "></div>
+						</td>
+					</tr>
+				</volist>
+			</tbody>
+		</table>
+		</div>
+		<div id="cart_footer">
+			共件{$allgoodsSum}商品，共计<font style="color:#E4393C">￥{$totalPrice}</font>
+			<a href="__MODULE__/Cart/lst.html" style="display:block">去购物车结账</a>
+		</div>
+	</div>
+</empty>
+

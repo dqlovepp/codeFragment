@@ -1,0 +1,22 @@
+    <span id="search_id" class="action-span1"></span>
+    <div style="clear:both"></div>
+</h1>
+<div class="list-div">
+    <table cellspacing='1' cellpadding='3'>
+        <tr>
+            <th class="group-title">
+            {$curhelp.parent.name}&gt;&gt;{$curhelp.child.name}</th>
+        </tr> 
+         <tr>
+            <td>
+            <empty name="curhelp.child.content">
+            内容为空！
+             <a href="__CONTROLLER__/modify/id/{$curhelp['child']['id']}.html">立即添加</a>
+            <else /> 
+            {$curhelp.child.content|htmlspecialchars_decode|html_entity_decode}
+            </empty>
+            
+            </td>
+        </tr>       
+    </table>
+</div>

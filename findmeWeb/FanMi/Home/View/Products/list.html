@@ -1,0 +1,57 @@
+	<!-- 列表主体 start -->
+	<div class="list w1210 bc mt10">
+		<!-- 面包屑导航 start -->
+		<div class="breadcrumb">
+			<h2>当前位置：<a href="__MODULE__/Index/Index.html">首页</a> &gt;&gt; <a href="__MODULE__/Index/Index.html">系列</a> &gt;&gt; <a href="javascript:;">{$curNav.nav_name}</a></h2>
+		</div>
+		<!-- 面包屑导航 end -->
+		<div style="clear:both; height:5px;"></div>
+		<!-- 主体IMG展示 start-->
+		<img src="{$Think.const.APP_HOME_IMG}fanmiBannerimg4.jpg" width="1210px" height="400px" border="0">
+		<!-- 主体IMG展示 end-->
+		<div style="clear:both;"></div>
+		<!--分类 start-->
+		<div class="footer w1210 bc mt10">
+			<p class="links">
+				<volist name="allCategory" id="category">
+				<if condition="$category['category_id'] eq $curCategory['category_id']">
+					<a href="javascript:;" style="color:#666666">{$category.category_name} </a>
+				<else />
+					<a href="__MODULE__/Products/goodsList/catalog/{$curNav.nav_id}/categoryid/{$category.category_id}.html">{$category.category_name} </a>
+				</if>
+				</volist>
+			</p>
+		</div>
+		<!--分类 end-->
+		<div style="clear:both;"></div>
+		<empty name="curgoods" >
+		<div style="width:100%; height:100px; color:#e00; text-align:center; line-height:30px; margin-top:50px;">
+		当前没有资源
+		</di>
+		<else/>
+		<!--分页导航 start-->
+		<div class="page mt20" style="width:1210px;">
+		{$pagelist}
+		</div>
+		<!--分页导航 end-->
+		<div style="clear:both;"></div>
+		<!-- 商品列表 start-->
+		<div class="goodslist mt10">
+			<ul>
+				<volist name="curgoods" id="goods">
+				<li>
+					<dl>
+						<dt><a href="__MODULE__/Products/goods/catalog/{$curCategory.navigation_id}/Category/{$curCategory.category_id}/id/{$goods.goods_id}.html"><img src="{$Think.const.URL}Public/{$goods.goods_big_img}" alt="" /></a></dt>
+						<dd><a href="__MODULE__/Products/goods/catalog/{$curCategory.navigation_id}/Category/{$curCategory.category_id}/id/{$goods.goods_id}.html">{$goods.goods_name}</a></dt>
+						<dd><strong>￥{$goods.goods_price}</strong></dt>
+						<dd><a href="__MODULE__/Products/goods/catalog/{$curCategory.navigation_id}/Category/{$curCategory.category_id}/id/{$goods.goods_id}.html"><em>已有10人评价</em></a></dt>
+					</dl>
+				</li>
+				</volist>
+			</ul>
+		</div>
+		<!-- 商品列表 end-->
+		</empty>
+	</div>
+	<!-- 列表主体 end-->
+	<div style="clear:both;"></div>

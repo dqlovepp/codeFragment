@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="职业装,fanmi,衣服,泛米网,网购">
+<meta property="wb:webmaster" content="683e4f1d604b6645" />
+<title>泛米网</title>
+<link href="{$Think.const.APP_HOME_STYLE}fanmi_index.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.APP_HOME_STYLE}fanmi_content.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}base.css" type="text/css">
+<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}global.css" type="text/css">
+<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}header.css" type="text/css">
+<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}common.css" type="text/css">
+<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}bottomnav.css" type="text/css">
+<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}footer.css" type="text/css">
+<script type="text/javascript" src="{$Think.const.APP_COMMON_JS}jquery-1.9.1.js"></script>
+<script src="http://kefu.qycn.com/vclient/state.php?webid=102907" language="javascript" type="text/javascript">
+</script>
+<script type="text/javascript">
+		/****
+	$(function(){
+	
+		$('#customer-help').mouseover(function(){
+			var CustomerService=$('#Customer-service');
+			CustomerService.css('display','block');
+				$(this).mouseout(function(){
+					CustomerService.mouseover(function(){
+						CustomerService.css('display','block');
+						return false;
+					});	
+					CustomerService.mouseout(function(){
+						CustomerService.css('display','none');
+						return false;
+					});	
+					CustomerService.css('display','none');
+				});
+		});
+		
+		$('.navType').each(function(){
+			var curObj=$(this);
+			curObj.mouseover(function(){
+				var navigatorBox=$('#navigator-box');
+				navigatorBox.animate(
+					{
+				    height:'50px',
+				   },1000
+				);
+			});
+		});
+	});
+	****/
+	
+</script>
+
+</head>
+<body>
+<div id="header_cont">
+	<div id="header_box">
+	<div id="header_Area">
+		<div class="header_left">
+			<ul>
+			<notempty name="Think.session.fm_user_id">
+				<li>亲，欢迎回来</li>
+				<li style="margin-left:10px"><a href="__MODULE__/Manager/myfm/id/{$Think.session.fm_user_id}.html" target="" class="user-login">{$Think.session.fm_user_name}</a></li>
+				<li style="margin-left:10px"><a href="__MODULE__/User/logout" target="" class="user-login">退出</a></li>
+			<else/>
+				<li>亲，欢迎访问泛米网</li>
+				<li><a href="__MODULE__/User/login" target="" class="user-login">请登录</a></li>
+				<li><a href="__MODULE__/User/register" target="" class="user-register">免费注册</a></li>
+			</notempty>
+			</ul>
+		</div>
+		<div class="header_right">
+			<ul>
+				<li><a href="__MODULE__/Cart/lst.html" target="" class="purchase-cat">购物车</a></li>
+				<li><a href="__MODULE__/Manager/order/id/{$Think.session.fm_user_id}.html"  class="purchase-order">我的订单</a></li>
+				<!-- <li>
+				<div>
+				<a href="javascript:;"  id="customer-help">客服服务</a>
+				<div id="Customer-service" class="header-secondLevel">
+					<div><a href="" target="">帮助中心</a></div>
+					<div><a href="" target="">在线服务</a></div>
+					<div><a href="" target="">售后服务</a></div>
+					<div><a href="" target="">投诉中心</a></div>
+				</div>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+	</div>
+	<switch name="layoutType">
+       	 <case value="Empty">
+       	    	
+       	 </case> 
+       	 <case value="Layout1">
+       	 <div id="navgator_first">
+			<div id="webLogo">
+				<a href="" target=""><img src="{$Think.const.APP_HOME_IMG}webName.png" width="200px" height="100px" border="0"></a>
+			</div>
+			<!--navigator-->
+			<div class="navigator-type">
+				<ul>
+					<li><a href="__MODULE__/index/index" class="navType">系列</a></li>
+					<li><a href="__MODULE__/index/index" class="navType">品牌</a></li>
+					<li><a href="__MODULE__/index/index" class="navType">服务</a></li>
+				</ul>
+			</div>
+		</div>
+			<div id="navigator-box">
+				<div class="navigator-title" style="width:{$navWidth}px">
+					<ul>
+						<foreach name="navinfo" item="list" >
+							<li><a href="__MODULE__/{$list.control}/{$list.action}/catalog/{$list.id}.html"  style="width:{$list.width}px">{$list.name}</a></li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+</div> 
+       	 <link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}list.css" type="text/css">
+       	 <script type="text/javascript" src="{$Think.const.FM_HOME_JS}jquery-1.8.3.min.js"></script>
+		 <script type="text/javascript" src="{$Think.const.FM_HOME_JS}header.js"></script>
+		 <script type="text/javascript" src="{$Think.const.FM_HOME_JS}list.js"></script>
+		 <div style="width:899px; height:50px;">
+		</div>
+		<!-- 头部 start -->
+		<div class="header w1210 bc mt15">
+			<!-- 头部上半部分 start 包括 logo、搜索、用户中心和购物车结算 -->
+			<div class="logo w1210">
+				<h1 class="fl"><a href="{$Think.const.APP_HOME_IMG}erweima.jpg"><img src="{$Think.const.APP_HOME_IMG}erweima.jpg" width="100px" alt="京西商城"></a></h1>
+				<!-- 头部搜索 start -->
+				<div class="search fl">
+				</div>
+				<!-- 头部搜索 end -->
+				<!-- 用户中心 start-->
+				<div class="user fl">
+					<dl>
+						<dt>
+							<em></em>
+							<a href="__MODULE__/Manager/myfm/id/{$Think.session.fm_user_id}.html">用户中心</a>
+							<b></b>
+						</dt>
+						<dd>
+							<div class="prompt">
+								<notempty name="Think.session.fm_user_id">
+								{$Think.session.fm_user_name},您好
+								<else/>
+								您好，请<a href="__MODULE__/Home/login">登录</a>
+								</notempty>
+							</div>
+							<div class="uclist mt10">
+								<ul class="list1 fl">
+									<li><a href="__MODULE__/Manager/myfm/id/{$Think.session.fm_user_id}.html">用户信息></a></li>
+									<li><a href="__MODULE__/Manager/order/id/{$Think.session.fm_user_id}.html">我的订单></a></li>
+									<li><a href="__MODULE__/Manager/address/id/{$Think.session.fm_user_id}.html">收货地址></a></li>
+								</ul>
+
+								<ul class="fl">
+									<li><a href="__MODULE__/Manager/consume/id/{$Think.session.fm_user_id}.html">消费记录></a></li>
+									<li><a href="__MODULE__/Manager/redEnvelope/id/{$Think.session.fm_user_id}.html">我的红包></a></li>
+								</ul>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!-- 用户中心 end-->
+
+				<!-- 购物车 start -->
+				<div class="cart fl">
+					<dl>
+						<dt>
+							<a href="__MODULE__/Cart/lst.html">去购物车结算</a>
+							<b></b>
+						</dt>
+						<dd>
+							 {$ajaxcar}
+						</dd>
+					</dl>
+				</div>
+				<!-- 购物车 end -->
+			</div>
+			<!-- 头部上半部分 end -->
+			
+			<div style="clear:both;"></div>
+		</div>
+		<!-- 头部 end-->
+		<div style="clear:both;"></div>
+		<div style="width:899px; height:80px;">
+		</div>
+		 </case>
+       	 <default />
+       	 <div id="navgator_first">
+			<div id="webLogo">
+				<a href="" target=""><img src="{$Think.const.APP_HOME_IMG}webName.png" width="200px" height="100px" border="0"></a>
+			</div>
+			<!--navigator-->
+			<div class="navigator-type">
+				<ul>
+					<li><a href="__ACTION__/navType/1" class="navType">系列</a></li>
+					<li><a href="__ACTION__/navType/2" class="navType">品牌</a></li>
+					<li><a href="__ACTION__/navType/3" class="navType">服务</a></li>
+				</ul>
+			</div>
+		</div>
+			<div id="navigator-box">
+				<div class="navigator-title" style="width:{$navWidth}px">
+					<ul>
+						<foreach name="navinfo" item="list" >
+							<li><a href="__MODULE__/{$list.control}/{$list.action}/catalog/{$list.id}.html"  style="width:{$list.width}px">{$list.name}</a></li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<div style="width:100%; height:10px;">
+			</div>
+</div>
+     </switch>

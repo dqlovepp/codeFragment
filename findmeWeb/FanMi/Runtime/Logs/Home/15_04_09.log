@@ -1,0 +1,7 @@
+[ 2015-04-09T21:14:52+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+

@@ -1,0 +1,30 @@
+    <span class="action-span"><a href="__MODULE__/Order/orderList" >全部订单</a></span>
+    <span id="search_id" class="action-span1"> - 待发货订单 </span>
+    <div style="clear:both"></div>
+</h1>
+<!-- 商品列表 -->
+<form method="post" action="" name="listForm" onsubmit="">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <caption align="top" height="30px">会员信息</caption>
+            <tr>       
+                <th align="center">姓名</th>
+                <th align="center">昵称</th>
+                <th align="center">邮箱</th>
+                <th align="center">电话</th>
+                <th align="center">注册时间</th>
+                <th align="center">上次登录时间</th>
+            </tr>
+            <volist name="users" id="member">
+            <tr>
+                <td align="center">{$member.user_name}</td>
+                <td align="center">{$member.user_nickname}</td>
+                <td align="center">{$member.user_email}</td>
+                <td align="center">{$member.user_tel}</td>
+                <td align="center">{$member.user_regist_time}</td>
+                <td align="center">{$member.user_login_time}</td>
+            </tr>
+            </volist>
+        </table>
+    </div>
+</form>

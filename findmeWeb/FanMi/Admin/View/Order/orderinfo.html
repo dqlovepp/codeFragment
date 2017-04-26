@@ -1,0 +1,127 @@
+    <span class="action-span"><a href="__MODULE__/Order/orderList" >全部订单</a></span>
+    <span id="search_id" class="action-span1"> - 待发货订单 </span>
+    <div style="clear:both"></div>
+</h1>
+<!-- 商品列表 -->
+<form method="post" action="" name="listForm" onsubmit="">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+             <caption align="top">订单信息</caption>
+            <tr>       
+                <th align="center">价格</th>
+                <th align="center">支付方式</th>
+                <th align="center">是否支付</th>
+                <th align="center">是否发货</th>
+                <th align="center">订单状态</th>
+                <th align="center">操作</th>
+            </tr>
+            <tr>
+                <td align="center"><span>{$order.total_price}</span></td>   
+                <td align="center"><span>
+                <switch name="order.pay_method" >
+                    <case value="1" >货到付款</case>
+                    <case value="2" >在线支付</case>
+                    <case value="3" >上门自提</case>
+                </switch>
+                </span></td>  
+                <td align="center"><span>
+                <img src="<if condition='($order.pay_status eq  1)'>{$Think.const.FM_ADMIN_IMG}yes.gif <else/>{$Think.const.FM_ADMIN_IMG}no.gif </if>"/>
+                </span></td>  
+                <td align="center"><span>
+                    <img src="<if condition='($order.post_status eq  1)'>{$Think.const.FM_ADMIN_IMG}yes.gif <else/>{$Think.const.FM_ADMIN_IMG}no.gif </if>"/>
+                </span></td>  
+                <td align="center"><span>
+                    <switch name="order.order_status" >
+                    <case value="0" >未确认</case>
+                    <case value="1" >已确认</case>
+                    <case value="2" >已完成</case>
+                    <case value="3" >申请退货</case>
+                    <case value="4" >退货成功</case>
+                </switch>
+                </span></td>  
+                <td align="center"><span>
+                    <if condition='($order.pay_status eq  1) AND ($order.post_status eq  0)'>                   
+                     <a href="">发货</a> 
+                    </if>
+                   <if condition='($order.order_status eq  3)'>                   
+                     <a href="">退款</a> 
+                    </if>                  
+                </span></td>            
+            </tr>
+        </table>
+        <br/>
+        <table cellpadding="3" cellspacing="1">
+             <caption align="top" height="30px">购买的商品信息</caption>
+             <tr>       
+                <th align="center">商品</th>
+                <th align="center">尺寸</th>
+                <th align="center">单价</th>
+                <th align="center">数量</th>
+            </tr>
+            <volist name="orderGoods" id="oGoods">
+            <tr>       
+                <td align="center" >
+                    <empty name="oGoods.goods">
+                    已经下架
+                    <else/>
+                    <ul>
+                    <li>{$oGoods.goods.goods_name}</li>
+                    <li><img src="{$Think.const.URL}Public/{$oGoods.goods.goods_mid_img}" ></li>
+                    </empty>
+                </td>
+                <td align="center">{$oGoods.goods_size}</td>
+                <td align="center">{$oGoods.price}</td>
+                <td align="center">{$oGoods.goods_number}</td>
+            </tr>
+            </volist>
+        </table>
+        <br/>
+        <table cellpadding="3" cellspacing="1">
+             <caption align="top" height="30px">收货人信息</caption>
+             <tr>
+                 <td align="right" width="100px">姓名：</td>
+                 <td align="left">{$order.shr_name}</td>
+             </tr>
+             <tr>
+                 <td align="right" width="100px">省：</td>
+                 <td align="left">{$order.shr_province}</td>
+             </tr>
+             <tr>
+                 <td align="right" width="100px">市：</td>
+                 <td align="left">{$order.shr_city}</td>
+             </tr>
+             <tr>
+                 <td align="right" width="100px">区：</td>
+                 <td align="left">{$order.shr_area}</td>
+             </tr>
+             <tr>
+                 <td align="right" width="100px">详细地址：</td>
+                 <td align="left">{$order.shr_address}</td>
+             </tr>
+             <tr>
+                 <td align="right" width="100px">电话：</td>
+                 <td align="left">{$order.shr_phone}</td>
+             </tr>
+        </table>
+        <br/>
+        <table cellpadding="3" cellspacing="1">
+            <caption align="top" height="30px">会员信息</caption>
+            <tr>       
+                <th align="center">姓名</th>
+                <th align="center">昵称</th>
+                <th align="center">邮箱</th>
+                <th align="center">电话</th>
+                <th align="center">注册时间</th>
+                <th align="center">上次登录时间</th>
+            </tr>
+            <tr>
+                <td align="center">{$member.user_name}</td>
+                <td align="center">{$member.user_nickname}</td>
+                <td align="center">{$member.user_email}</td>
+                <td align="center">{$member.user_tel}</td>
+                <td align="center">{$member.user_regist_time}</td>
+                <td align="center">{$member.user_login_time}</td>
+            </tr>
+        </table>
+    </div>
+</form>

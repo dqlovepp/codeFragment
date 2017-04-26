@@ -1,0 +1,152 @@
+	<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}home.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}user.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}bottomnav.css" type="text/css">
+	<script type="text/javascript" src="{$Think.const.FM_HOME_JS}home.js"></script>	
+	<style type="text/css">
+	.orderbox{border: 1px solid #DDD; width: 910px; height:180px; padding: 5px; margin-bottom: 5px;}
+	.orderbox:hover{border: 1px solid #AAA;}
+	.orderTitle{width: 890px; height: 35px; line-height: 35px}
+	.orderTitle p{float: left;}
+	.orderTitle a{display:block; float: right;}
+	.orderStatus p{width: 100%; height: 28px; line-height: 28px; margin-bottom: 5px;}
+	</style>
+	<div style="clear:both;"></div>
+	<!-- 页面主体 start -->
+	<div class="main w1210 bc mt10">	
+		<!-- 左侧导航菜单 start -->
+		<div class="menu fl">
+			<h3>我的泛米</h3>
+			<div class="menu_wrap">
+				<dl>
+					<dt>账户中心 <b></b></dt>
+					<dd><b>.</b><a href="__MODULE__/Manager/myfm/id/{$userinfo.user_id}.html">基本信息</a></dd>
+					<dd><b>.</b><a href="__MODULE__/Manager/redEnvelope/id/{$userinfo.user_id}.html">我的红包</a></dd>			
+					<dd><b>.</b><a href="__MODULE__/Manager/consume/id/{$userinfo.user_id}.html">消费记录</a></dd>
+					<dd><b>.</b><a href="__MODULE__/Manager/address/id/{$userinfo.user_id}.html">收货地址</a></dd>
+				</dl>
+				<dl>
+					<dt>订单中心 <b></b></dt>
+					<dd><b>.</b><a href="__MODULE__/Manager/order/id/{$userinfo.user_id}.html" class="curmenua">我的订单</a></dd>
+				</dl>
+			</div>
+		</div>
+		<!-- 左侧导航菜单 end -->
+
+		<!-- 右侧内容区域 start -->
+		<div class="content fl ml10">
+			<div class="user_hd">
+				<h3>我的订单</h3>
+			</div>
+
+			<div class="user_bd mt10" style="color:#666">
+				<empty name="userOrder">
+				暂时没有订单信息
+				<else/>
+				<volist name="userOrder" id="myorder">
+				<div class="orderbox">					
+					<ul>
+						<li class="orderTitle">
+							<p class="left">{$myorder.orders.addtime}</p>
+							<if condition="($myorder['orders']['order_status'] eq 4) OR ($myorder['orders']['order_status'] eq 2)">
+							<a class="right" href="javascript:;" onclick="delOrder(this,{$myorder.orders.id})">删除</a>
+							</if>							
+						</li>
+						<li class="orderCon">
+							<table cellspacing="0" cellpadding="2" border="0">
+								<tr>
+									<td width="200px" align="center">
+									<a href="__MODULE__/Products/goods/catalog/{$myorder.goods.catalog}/Category/{$myorder.goods.goods_category_id}/id/{$myorder.goods.goods_id}.html">
+									<img src="{$Think.const.URL}Public/{$myorder.goods.goods_mid_img}" >
+									</a>
+									</td>
+									<td  width="200px" align="center" >
+										<a href="__MODULE__/Products/goods/catalog/{$myorder.goods.catalog}/Category/{$myorder.goods.goods_category_id}/id/{$myorder.goods.goods_id}.html">{$myorder.goods.goods_name}
+										</a>
+									</td>
+									<td width="100px" align="center">{$myorder.price}</td>
+									<td width="100px">{$myorder.goods_number}件</td>
+									<td width="100px">{$myorder.orders.total_price}</td>
+									<td width="100px" align="center" class="orderStatus">
+									<if condition="$myorder['orders']['pay_status'] eq 1">
+									<p>已支付</p>
+										<if condition="$myorder['orders']['post_status'] eq 0">
+										<p>尚未发货</p>
+										<elseif condition="$myorder['orders']['post_status'] eq 1"/>
+										<p>已经发货</p>									
+										<else/>
+										<p>已收货</p>
+										</if>	
+									<else/>
+									<p>尚未支付</p>
+									</if>
+									</td>
+									<td width="100px" align="center" class="orderStatus">
+									<if condition="$myorder['orders']['pay_status'] eq 0">
+									<p><a href="__MODULE__/Cart/alipay/orderid/{$myorder.orders.dealid}.html">立即支付</a></p>
+									<else/>
+									<if condition="$myorder['orders']['post_status'] eq 0">
+									<p id="noticePost" style="cursor:pointer" onclick="noticePost({$myorder.orders.id})">提醒发货</p>
+									<elseif condition="$myorder['orders']['post_status'] eq 1"/>				
+									<switch name="myorder.orders.order_status">
+										<case value="3">正在退货中</case>
+										<case value="4">退货成功</case>
+										 <default />
+										 <p><a href="__MODULE__/Manager/reveiveGoods/id/{$userinfo.user_id}.html">确认收货</a></p>
+										 <p><a href="__MODULE__/Manager/returnGoods/id/{$userinfo.user_id}.html">退款</a></p>
+									</switch>														
+									</if>
+									</if>
+									
+									</td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+				</div>
+				</volist>
+				</empty>
+			</div>
+		</div>
+		<!-- 右侧内容区域 end -->
+	</div>
+	<!-- 页面主体 end-->
+	<div style="clear:both;"></div>
+	<script>
+		function delOrder(obj,id)
+		{
+			if(confirm("是否确定删除该商品"))
+	        $.ajax({
+	            type:'post',
+	            dataType:'json',
+	            data:{'id':id},
+	            url:"__MODULE__/Cart/delOrder",
+	            success:function(data)
+	            {
+	                if(data['isok'] !=0)
+	                {
+	                	location.reload();
+	                }
+	            }
+	        });     
+		} 
+		function noticePost(id)
+		{
+			$.ajax({
+	            type:'post',
+	            dataType:'json',
+	            data:{'id':id},
+	            url:"__MODULE__/Cart/noticePost",
+	            success:function(data)
+	            {
+	                if(data['isok'])
+	                {
+	                	alert('已经提醒，请耐心等待');
+	                }
+	                else
+	                {
+	                	alert(data['isok']);
+	                }
+	            }
+	        }); 
+		}
+	</script>

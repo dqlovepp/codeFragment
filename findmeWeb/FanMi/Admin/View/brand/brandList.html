@@ -1,0 +1,77 @@
+    <span class="action-span"><a href="brandList.html">商品品牌</a></span>
+    <span id="search_id" class="action-span1"> - 商品品牌 </span>
+    <div style="clear:both"></div>
+</h1>
+<form method="post" action="" name="listForm">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1" >
+            <tr>
+                <th align="center">品牌名称</th>
+                <th align="center">品牌网址</th>
+                <th align="center">品牌描述</th>
+                <th align="center">操作</th>
+            </tr>
+            <volist name="brands" id='brand'>
+            <tr>
+                <td class="first-cell" align="center">
+                   {$brand.brand_name}
+                </td>
+                <td align="center">
+                    <empty name="brand.site_url">
+                    未知
+                    <else/>
+                        <a href="{$brand.site_url}">
+                        <if condition="mb_strlen($brand['site_url'],'utf-8') gt 30" >
+                        {$brand.site_url|msubstr=0,30,'utf-8',true}
+                        <else/>
+                        {$brand.site_url}
+                        </if> 
+                        </a>                   
+                    </empty>
+                </td>
+                <td align="center">
+                    <empty name="brand.brand_desc">
+                    为空
+                    <else/>
+                        <if condition="mb_strlen($brand['brand_desc'],'utf-8') gt 40" >
+                        {$brand.brand_desc|msubstr=0,40,'utf-8',true}
+                        <else/>
+                        {$brand.brand_desc}
+                        </if>
+                    </empty>
+                </td>
+                <td align="center">
+                <a href="__MODULE__/Brand/brandEdit/brandid/{$brand.brand_id}.html" title="编辑">编辑</a> |
+                <a href="javascript:;" title="移除" onclick="delbrand(this,{$brand.brand_id})">移除</a> 
+                </td>
+            </tr>
+            </volist>
+        </table>
+    </div>
+</form>
+<script type="text/javascript">
+    function delbrand(obj,id){
+        if(confirm('是否确定删除'))
+        {
+            if(!isNaN(id))
+            {
+                $.ajax({
+                    type:'post',
+                    dataType:'json',
+                    data:{'brand_id':id},
+                    url:"__MODULE__/Brand/delbrand",
+                    success:function(data){
+                        if(data['isOk']==1)
+                        {
+                            $(obj).parent().parent().remove();
+                        }
+                        else
+                        {
+                            alert('操作异常');
+                        }
+                    }
+                });
+            }
+        }
+    }
+</script>

@@ -1,0 +1,69 @@
+    <span class="action-span"><a href="__MODULE__/Order/orderList" >全部订单</a></span>
+    <span id="search_id" class="action-span1"> - 待发货订单 </span>
+    <div style="clear:both"></div>
+</h1>
+<!-- 商品列表 -->
+<form method="post" action="" name="listForm" onsubmit="">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th align="center">编号</th>         
+                <th align="center">价格</th>
+                <th align="center">支付方式</th>
+                <th align="center">是否支付</th>
+                <th align="center">是否发货</th>
+                <th align="center">订单状态</th>
+                <th align="center">操作</th>
+            </tr>
+            <empty name="orders">
+            <tr>
+                <td colspan="7" align="center">暂无相应的订单</td>
+            </tr>
+            <else/>
+            <volist name="orders" id="val">
+            <tr>
+                <td align="center">{$i}</td>
+                <td align="center"><span>{$val.total_price}</span></td>   
+                <td align="center"><span>
+                <switch name="val.pay_method" >
+                    <case value="1" >货到付款</case>
+                    <case value="2" >在线支付</case>
+                    <case value="3" >上门自提</case>
+                </switch>
+                </span></td>  
+                <td align="center"><span>
+                <img src="<if condition='($val.pay_status eq  1)'>{$Think.const.FM_ADMIN_IMG}yes.gif <else/>{$Think.const.FM_ADMIN_IMG}no.gif </if>"/>
+                </span></td>  
+                <td align="center"><span>
+                    <img src="<if condition='($val.post_status eq  1)'>{$Think.const.FM_ADMIN_IMG}yes.gif <else/>{$Think.const.FM_ADMIN_IMG}no.gif </if>"/>
+                </span></td>  
+                <td align="center"><span>
+                    <switch name="val.order_status" >
+                    <case value="0" >未确认</case>
+                    <case value="1" >已确认(等待收货)</case>
+                    <case value="2" >交易完成</case>
+                    <case value="3" >申请退货</case>
+                    <case value="4" >退货成功</case>
+                </switch>
+                </span></td>  
+                <td align="center"><span>
+                    <a href="__MODULE__/Order/orderinfo/orderid/{$val.id}.html">订单详情</a>
+                    <if condition='($val.pay_status eq  1) AND ($val.post_status eq  0)'>                   
+                     <a href="__MODULE__/Order/postGoods/orderid/{$val.id}.html">发货</a> 
+                    </if>
+                   <if condition='($val.order_status eq  3)'>                   
+                     <a href="">退款</a> 
+                    </if>                  
+                </span></td>            
+            </tr>
+            <tr height="2px">
+                <td colspan="7" >
+                    <hr/>
+                </td>
+            </tr>
+            </volist>
+            </empty>
+        </table>
+
+    </div>
+</form>

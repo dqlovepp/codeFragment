@@ -1,0 +1,235 @@
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}login.css" type="text/css">
+	<script type="text/javascript">
+
+	$(function(){
+		$('#changeImg').click(function(){
+			$('#verifyImg').attr("src","__MODULE__/User/verifyImg");
+		});
+		var checkName=false;
+		var checkEmail=false;
+		//判断该用户名是否被注册过
+		$("#registeForm input[name='username']").focus(function(){			
+			var nameObj=$(this);
+			$(this).blur(function(){
+				var username=$.trim(nameObj.val());
+				$.ajax({
+					type:"post",
+					dataType:'json',
+					data:{"data":"name","value":username},
+					url:"/Home/User/IsExit",
+					success:function(data){
+						if(data["isOk"] !=0)
+						{
+							checkName=false;
+							$("#regist_btn").unbind( "click" );
+							$("#registeForm input[name='username']").css('border',"1px solid #EE0000")
+							$("#registeForm input[name='username']").next().html("该用户名已被注册").css('color','#EE0000').css('display','block');
+						}
+						else
+						{
+							var userName=$("#registeForm input[name='username']").val();
+							var un_regex = new RegExp("^([\u4E00-\uFA29]|[\uE7C7-\uE7F3]|[a-zA-Z0-9_]){3,20}$"); 
+							if(!un_regex.test(userName))
+							{
+								checkName=false;
+								$("#regist_btn").unbind( "click" );
+								$("#registeForm input[name='username']").css('border',"1px solid #EE0000")
+								$("#registeForm input[name='username']").next().html("3-20位字符，可由中文、字母、数字和下划线组成").css('color','#EE0000');
+							}
+							else
+							{
+								$("#registeForm input[name='username']").css('border',"1px solid #5AB73B");
+								$("#registeForm input[name='username']").next().css('display','none');
+								checkName=true;
+								if(checkName && checkEmail)
+								{
+									$("#regist_btn").bind("click",function(){
+										checkSubmit();
+									});
+								}
+
+							}
+						}
+					}
+				});
+			});
+		});
+		//判断某个邮箱是否已经被注册过
+		$("#registeForm input[name='email']").focus(function(){			
+			var emailObj=$(this);
+			$(this).blur(function(){
+				var email=$.trim(emailObj.val());
+				$.ajax({
+					type:"post",
+					dataType:'json',
+					data:{"data":"email","value":email},
+					url:"/Home/User/IsExit",
+					success:function(data){
+						if(data["isOk"] !=0)
+						{
+							checkEmail=false;
+							$("#regist_btn").unbind( "click" );
+							$("#registeForm input[name='email']").css('border',"1px solid #EE0000")
+							$("#registeForm input[name='email']").next().html("该邮箱已被注册").css('color','#EE0000').css('display','block');
+						}
+						else
+						{
+							//邮箱验证
+							var email_regex = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+							var email=$("#registeForm input[name='email']").val();
+							if(!email_regex.test(email))
+							{
+								checkEmail=false;
+								$("#regist_btn").unbind( "click" );
+								$("#registeForm input[name='email']").css('border',"1px solid #EE0000");
+								$("#registeForm input[name='email']").next().html("请输入正确的邮箱").css('display','block').css('color','#EE0000');
+							}
+							else
+							{
+								$("#registeForm input[name='email']").css('border',"1px solid #5AB73B");
+								$("#registeForm input[name='email']").next().css('display','none');
+								checkEmail=true;
+								if(checkName && checkEmail)
+								{
+									$("#regist_btn").bind("click",function(){
+										checkSubmit();
+									});
+								}
+							}
+						}
+					}
+				});
+			});
+		});
+		function checkSubmit(){
+			//验证用户名
+			var isSubmit=true;
+			var userName=$("#registeForm input[name='username']").val();
+			var un_regex = new RegExp("^([\u4E00-\uFA29]|[\uE7C7-\uE7F3]|[a-zA-Z0-9_]){3,20}$"); 
+			if(!un_regex.test(userName))
+			{
+				isSubmit=false;
+				$("#registeForm input[name='username']").css('border',"1px solid #EE0000")
+				$("#registeForm input[name='username']").next().css('color','#EE0000');
+			}
+			else
+			{
+				$("#registeForm input[name='username']").css('border',"1px solid #5AB73B");
+				$("#registeForm input[name='username']").next().css('display','none');
+			}
+			//验证密码
+			var password=$("#registeForm input[name='password']").val();
+			var ps_regex = new RegExp("^([a-zA-Z0-9_]){6,20}$"); 
+			if(!ps_regex.test(password))
+			{
+				isSubmit=false;
+				$("#registeForm input[name='password']").css('border',"1px solid #EE0000")
+				$("#registeForm input[name='password']").next().css('color','#EE0000');
+			}
+			else
+			{
+				$("#registeForm input[name='password']").css('border',"1px solid #5AB73B");
+				$("#registeForm input[name='password']").next().css('display','none');
+			}
+			//确认密码
+			var wpassword=$("#registeForm input[name='wpassword']").val();
+			if($.trim(wpassword)=='' || $.trim(wpassword) !=$.trim(password))
+			{
+				isSubmit=false;
+				$("#registeForm input[name='wpassword']").css('border',"1px solid #EE0000");
+				$("#registeForm input[name='wpassword']").next().css('display','block').css('color','#EE0000');
+			}
+			else
+			{
+				$("#registeForm input[name='wpassword']").css('border',"1px solid #5AB73B");
+				$("#registeForm input[name='wpassword']").next().css('display','none');
+			}
+			//邮箱验证
+			var email_regex = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+			var email=$("#registeForm input[name='email']").val();
+			if(!email_regex.test(email))
+			{
+				isSubmit=false;
+				$("#registeForm input[name='email']").css('border',"1px solid #EE0000");
+				$("#registeForm input[name='email']").next().css('display','block').css('color','#EE0000');
+			}
+			else
+			{
+				$("#registeForm input[name='email']").css('border',"1px solid #5AB73B");
+				$("#registeForm input[name='email']").next().css('display','none');
+			}
+			//验证码
+			var checkcode=$("#registeForm input[name='checkcode']").val();
+			if($.trim(checkcode)=='')
+			{
+				isSubmit=false;
+				$("#registeForm input[name='checkcode']").css('border',"1px solid #EE0000");
+			}
+			else
+			{
+				$("#registeForm input[name='checkcode']").css('border',"1px solid #5AB73B");
+			}
+			//提交表单
+			if(isSubmit)
+			{
+				$("#registeForm").attr("action","/Home/user/regist").submit();
+			}		
+		};
+
+	});
+	</script>
+	<!-- 登录主体部分start -->
+	<div class="login w990 bc mt10 regist">
+		<div class="login_hd">
+			<h2>用户注册</h2>
+			<b></b>
+		</div>
+		<div class="login_bd">
+			<div class="login_form fl">
+				<form action="" method="post" id="registeForm">
+					<ul>
+						<li>
+							<label for="">用户名：</label>
+							<input type="text" class="txt" name="username" placeholder="用户名"/>
+							<p>3-20位字符，可由中文、字母、数字和下划线组成</p>
+						</li>
+						<li>
+							<label for="">密码：</label>
+							<input type="password" class="txt" name="password"  placeholder="密码"/>
+							<p>6-20位字符，可使用字母、数字和符号的组合，不建议使用纯数字、纯字母、纯符号</p>
+						</li>
+						<li>
+							<label for="">确认密码：</label>
+							<input type="password" class="txt" name="wpassword"  placeholder="确认密码"/>
+							<p style="display:none">请再次输入密码</p>
+						</li>
+						<li>
+							<label for="">邮箱：</label>
+							<input type="text" class="txt" name="email"  placeholder="邮箱"/>
+							<p style="display:none">请输入正确的邮箱</p>
+						</li>
+						<li class="checkcode">
+							<label for="">验证码：</label>
+							<input type="text"  name="checkcode"  placeholder="验证码"/>
+							<img src="__MODULE__/User/verifyImg" alt="" id="verifyImg" onclick="this.src='__MODULE__/User/verifyImg?'+Math.random()"/>
+							<span>看不清？<a href="javascript:;" id="changeImg">换一张</a></span>
+						</li>
+						<li>
+							<label for="">&nbsp;</label>
+							<input type="checkbox" class="chb" checked="checked" /> 我已阅读并同意<a href="">《用户注册协议》
+						</li>
+						<li>
+							<label for="">&nbsp;</label>
+							<a href="javascript:;"  id="regist_btn"></a>
+						</li>
+					</ul>
+				</form>
+
+				
+			</div>
+			
+		</div>
+	</div>
+	<!-- 登录主体部分end -->

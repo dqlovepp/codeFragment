@@ -1,0 +1,637 @@
+[ 2015-05-06T08:56:26+08:00 ] 10.144.21.183 /Home/Cart/delOrder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_order [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_order_goods [ RunTime:0.000000s ]
+SQL: DELETE FROM `fm_order` WHERE `id` = 111 [ RunTime:0.000000s ]
+SQL: DELETE FROM `fm_order_goods` WHERE ( order_id=111 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T09:04:16+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('lideqwuan','河北省','唐山市','乐亭县','huashi','13164100890',23,1) [ RunTime:0.000000s ]
+
+[ 2015-05-06T09:13:00+08:00 ] 10.144.21.183 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='23' AND goods_id=32 AND goods_size='S' AND userweight=70 AND userheight=1.2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,1.2,70,'S',1,23) [ RunTime:0.000000s ]
+
+[ 2015-05-06T09:22:39+08:00 ] 10.144.21.183 /Home/Cart/noticePost
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_order [ RunTime:0.000000s ]
+SQL: UPDATE `fm_order` SET `noticeTimes`=noticeTimes+1 WHERE ( id=112 AND noticeTimes<128 ) [ RunTime:0.015600s ]
+
+[ 2015-05-06T09:41:33+08:00 ] 10.144.21.183 /Home/Cart/delOrder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_order [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_order_goods [ RunTime:0.015600s ]
+SQL: DELETE FROM `fm_order` WHERE `id` = 112 [ RunTime:0.000000s ]
+SQL: DELETE FROM `fm_order_goods` WHERE ( order_id=112 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:34:24+08:00 ] 10.144.21.183 /Home/Manager/deladdress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: DELETE FROM `fm_address` WHERE `id` = 24 [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:34:54+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('lidequan','北京市','东城区','','lideqfiuog','131641008590',23,1) [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:39:21+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[shr_zip=>15648]
+
+[ 2015-05-06T10:39:26+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[shr_zip=>15648]
+
+[ 2015-05-06T10:40:20+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('gniweo','山东省','淄博市','张店区','agewge','13164100890',23,1) [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:48:29+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.015600s ]
+ERR: 非法数据对象！:[shr_zip=>456gawe]
+
+[ 2015-05-06T10:56:54+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:58:17+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:58:33+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T10:59:00+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:00:00+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:01:21+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:02:05+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[shr_zip=>45678]
+
+[ 2015-05-06T11:02:44+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[shr_zip=>45678]
+
+[ 2015-05-06T11:03:46+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[shr_zip=>gew]
+
+[ 2015-05-06T11:04:24+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='gniweo',`shr_province`='山东省',`shr_city`='淄博市',`shr_area`='张店区',`shr_address`=' agewge',`shr_phone`=' 13164100890 ',`is_default`=1 WHERE ( id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:07:49+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[shr_zip=>jhtr]
+
+[ 2015-05-06T11:08:04+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='gniweo',`shr_province`='山东省',`shr_city`='淄博市',`shr_area`='张店区',`shr_address`='  agewge',`shr_phone`='  13164100890  ',`shr_mobile`='agew',`is_default`=1 WHERE ( id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:17:29+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='gniweo',`shr_province`='山东省',`shr_city`='淄博市',`shr_area`='张店区',`shr_address`='   agewge',`shr_phone`='   13164100890   ',`shr_zip`='4654',`shr_mobile`='010-32184',`is_default`=1 WHERE ( id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:32:26+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015601s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=26 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='李德全',`shr_province`='吉林省',`shr_city`='辽源市',`shr_area`='东辽县',`shr_address`='河师大',`shr_phone`='13164100890',`shr_zip`=' 4654 ',`shr_mobile`=' 010-32184 ',`is_default`=1 WHERE ( id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:33:36+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('小李','江西省','萍乡市','莲花县','agew','13164100890',23,1) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:43:35+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND id=27 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='小李',`shr_province`='江西省',`shr_city`='萍乡市',`shr_area`='莲花县',`shr_address`=' 河师大',`shr_phone`=' 13164100890 ',`shr_zip`=' 57 ',`shr_mobile`='2368 ',`is_default`=1 WHERE ( id=27 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:44:44+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015601s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=27 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='小李',`shr_province`='江西省',`shr_city`='萍乡市',`shr_area`='莲花县',`shr_address`=' 河师大',`shr_phone`='  13164100890  ',`shr_zip`='1257  ',`shr_mobile`=' 2368  ',`is_default`=1 WHERE ( id=27 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:45:24+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=27 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='小李',`shr_province`='江西省',`shr_city`='萍乡市',`shr_area`='莲花县',`shr_address`=' 河师大',`shr_phone`='13164100890   ',`shr_zip`=' 1257   ',`shr_mobile`='  2368- 54',`is_default`=1 WHERE ( id=27 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:47:08+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='李',`shr_province`='江西省',`shr_city`='萍乡市',`shr_area`='莲花县',`shr_address`=' 河师大',`shr_phone`=' 13164100890    ',`shr_zip`='  1257    ',`shr_mobile`='   2368- 54 ',`is_default`=1 WHERE ( id=27 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T11:47:56+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`shr_zip`,`shr_mobile`,`member_id`,`is_default`) VALUES ('我们','湖南省','株洲市','芦淞区','窝里个去','13164100870','4878894','58',23,1) [ RunTime:0.000000s ]
+
+[ 2015-05-06T12:00:54+08:00 ] 10.144.21.183 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=26 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T12:01:05+08:00 ] 10.144.21.183 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=28 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T12:05:14+08:00 ] 10.144.21.183 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='我们的',`shr_province`='湖南省',`shr_city`='株洲市',`shr_area`='芦淞区',`shr_address`=' 窝里个去',`shr_phone`=' 13164100870 ',`shr_zip`=' 4878894 ',`shr_mobile`='1258 ',`is_default`=1 WHERE ( id=28 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T12:05:56+08:00 ] 10.144.21.183 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`shr_zip`,`shr_mobile`,`member_id`,`is_default`) VALUES ('你好','河北省','唐山市','路北区','奥格威','13845651234','gaewjo','15465',23,1) [ RunTime:0.015600s ]
+
+[ 2015-05-06T12:06:07+08:00 ] 10.144.21.183 /Home/Manager/deladdress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: DELETE FROM `fm_address` WHERE `id` = 29 [ RunTime:0.000000s ]
+
+[ 2015-05-06T12:06:18+08:00 ] 10.144.21.183 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 23 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 AND member_id=23 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=28 ) [ RunTime:0.000000s ]
+
+[ 2015-05-06T13:14:18+08:00 ] 10.144.21.183 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='23' AND goods_id=32 AND goods_size='S' AND userweight=60 AND userheight=1.3 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,1.3,60,'S',1,23) [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:21+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='1696232133@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:32+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:32+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:39+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan11' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:39+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan11' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:39+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan11' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:44+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='1696232133@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:59+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:11:59+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:17:31+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan11' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:17:34+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan12' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:17:34+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan12' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:17:57+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='heshida_2010@126.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:10+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='lidequan13' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:22+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:25+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:25+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:42+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:42+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:23:42+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:24:00+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_name='findme' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2015-05-06T15:24:13+08:00 ] 10.144.21.183 /Home/User/IsExit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE ( user_email='903629199@qq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+

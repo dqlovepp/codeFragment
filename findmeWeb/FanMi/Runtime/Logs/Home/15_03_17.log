@@ -1,0 +1,48 @@
+[ 2015-03-17T11:04:33+08:00 ] 192.168.51.228 /Home/Cart/test
+ERR: 模板不存在:./FanMi/Home/View/Cart/test.html
+
+[ 2015-03-17T11:04:34+08:00 ] 192.168.51.228 /Home/Cart/test
+ERR: 模板不存在:./FanMi/Home/View/Cart/test.html
+
+[ 2015-03-17T14:45:54+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+
+[ 2015-03-17T16:21:18+08:00 ] 192.168.51.228 /Home/Cart/%7B$Think.const.URL%7DPublic/cxselect/cityData.min.json
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-17T18:15:15+08:00 ] 119.96.204.161 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+
+[ 2015-03-17T21:22:13+08:00 ] 192.168.51.228 /Home/Cart/order
+ERR: 非法数据对象！:[city=>秦皇岛市]
+
+[ 2015-03-17T21:43:12+08:00 ] 192.168.51.228 /Home/Cart/order
+ERR: 非法数据对象！:[city=>秦皇岛市]
+
+[ 2015-03-17T22:24:02+08:00 ] 192.168.51.228 /Home/Cart/alipay
+ERR: 参数错误或者未定义:order_id
+

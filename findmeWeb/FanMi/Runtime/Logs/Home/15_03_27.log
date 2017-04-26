@@ -1,0 +1,274 @@
+[ 2015-03-27T09:40:44+08:00 ] 192.168.51.228 /Home/Cart/orderSumit/order_id/79.html
+ERR: 模板不存在:./FanMi/Home/View/Cart/orderSumit.html
+
+[ 2015-03-27T10:44:07+08:00 ] 192.168.51.228 /Home/Cart/alipay/orderid/24.html
+ERR: Think\Controller:err方法不存在！
+
+[ 2015-03-27T12:46:15+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=14 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T13:05:49+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+
+[ 2015-03-27T13:08:49+08:00 ] 192.168.51.228 /Home/Cart/ajaxDelGoods
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: isOk D:\wamp\www\web\FanMi\Home\Controller\CartController.class.php 第 112 行.
+
+[ 2015-03-27T13:13:06+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='17' AND goods_id=32 AND goods_size='M' AND userweight=90 AND userheight=2.2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,2,90,'M',1,17) [ RunTime:0.000000s ]
+
+[ 2015-03-27T13:39:48+08:00 ] 192.168.51.228 /Home/Manager/addAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_address` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_phone`,`member_id`,`is_default`) VALUES ('PPS','吉林省','通化市','柳河县','gewohiogew','131 64100890',17,1) [ RunTime:0.000000s ]
+
+[ 2015-03-27T13:45:52+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=16 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T14:59:10+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='17' AND goods_id=32 AND goods_size='S' AND userweight=80 AND userheight=1.6 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,1,80,'S',1,17) [ RunTime:0.000000s ]
+
+[ 2015-03-27T14:59:33+08:00 ] 192.168.51.228 /Home/Cart/order?curAddress=16&curPayMethod=2
+ERR: 非法数据对象！:[shr_address=>华师大]
+
+[ 2015-03-27T15:01:11+08:00 ] 192.168.51.228 /Home/Cart/order?curAddress=16&curPayMethod=2
+ERR: 非法数据对象！:[shr_address=>华师大]
+
+[ 2015-03-27T15:11:30+08:00 ] 192.168.51.228 /Home/Cart/addToCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_cart [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_cart` WHERE ( member_id='17' AND goods_id=32 AND goods_size='S' AND userweight=75 AND userheight=1.6 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `fm_cart` (`goods_id`,`userheight`,`userweight`,`goods_size`,`amount`,`member_id`) VALUES (32,1,75,'S',1,17) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:41:01+08:00 ] 192.168.51.228 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='MYPPS',`shr_province`='吉林省',`shr_city`='通化市',`shr_area`='柳河县',`shr_address`=' 华师大',`shr_phone`=' 131 64100890 ',`is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:42:57+08:00 ] 192.168.51.228 /Home/Manager/modifyAddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `shr_name`='MYP',`shr_province`='吉林省',`shr_city`='通化市',`shr_area`='柳河县',`shr_address`='  华师大',`shr_phone`='  131 64100890  ',`is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:44:57+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=14 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:45:59+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:48:28+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=14 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:48:33+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:48:50+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=16 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:49:04+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T15:59:32+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=16 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T16:00:28+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T16:00:42+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=16 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T16:03:47+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=14 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T16:04:23+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T16:33:23+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=16 ) [ RunTime:0.000000s ]
+
+[ 2015-03-27T17:44:45+08:00 ] 192.168.51.228 /Home/Manager/ajaxDefault
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_navigation [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fm_navigation` WHERE ( nav_type=1 ) ORDER BY nav_rank ASC,nav_id ASC  [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_user [ RunTime:0.015600s ]
+SQL: SELECT * FROM `fm_user` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE fm_address [ RunTime:0.015600s ]
+SQL: UPDATE `fm_address` SET `is_default`=0 WHERE ( is_default=1 ) [ RunTime:0.000000s ]
+SQL: UPDATE `fm_address` SET `is_default`=1 WHERE ( id=18 ) [ RunTime:0.000000s ]
+

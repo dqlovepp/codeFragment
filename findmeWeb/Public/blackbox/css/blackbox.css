@@ -1,0 +1,138 @@
+#BlackBox {
+	z-index: 8000;
+	position: fixed;
+	top:0;
+	left:0;
+	line-height: 140%;
+	font-size: 14px;
+	color: #000;
+}
+
+#BlackBoxGap {
+	position:absolute;	
+	top:0;
+	left:0;
+	background:black url("../images/fullbody.png") repeat;
+	z-index: -1;
+	_z-index: 7000;
+}
+
+#BlackBoxContent{
+	z-index: 8050;
+	position: absolute;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	display:none;
+}
+
+#BlackBoxContent .Outer {
+	background: #595757;	
+	text-shadow: none;	
+	-webkit-border-radius: 4px;  
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom:0;
+	border: 1px solid #3e3a39;
+}
+
+#BlackBoxContent .Inner  {
+	background: #f9f9f9;
+	position: absolute;
+	-webkit-border-radius: 2px;  
+	-moz-border-radius: 2px;
+	border-radius:2px;
+	top: 9px;
+	left: 9px;
+	border: 1px solid #727171;
+}
+
+#BlackBoxinput {
+	-webkit-border-radius: 2px;  
+	-moz-border-radius: 2px;
+	border-radius:2px;
+	border: 1px solid #8f8f8f;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    width: 380px;
+    padding: 7px 6px;
+}
+
+#BlackBoxload {
+	position: absolute;
+	text-indent: -9999px;
+	background: url("../images/load.gif") no-repeat;
+	width: 58px;
+	height: 10px;
+	z-index: 9999;
+}
+
+.system {
+	width: 400px;
+	padding:15px 20px 45px;
+}
+
+
+.Inner #actions{
+	position: absolute;
+	height: 40px;
+	bottom: 0;
+	right: 0;
+	width:200px; 
+}
+
+.Inner #actions div{
+	float: right;
+	margin-right:14px;
+	cursor: pointer;
+	padding:5px 8px;
+	line-height:20px;
+	-webkit-border-radius: 2px;  
+	-moz-border-radius: 2px;
+	border-radius:2px;	
+}
+
+.Inner #actions .confirm{
+	background: #595757;
+	color: #ffffff;
+}
+
+.Inner #actions .confirm:hover{
+	background: #3E3A39;
+}
+
+.Inner #actions .cancel{
+	color: #898989;
+}
+
+.Outer .close {
+	position: absolute;
+	right: 0;
+	bottom:-40px;
+	cursor: pointer;
+	background: url("../images/close.png") no-repeat;
+	float: left;
+	text-indent: -9999px;
+	width: 27px;
+	height: 27px;
+}
+
+#BlackBoxIframe {
+	background: #f9f9f9;
+}
+
+#BlackBoxAttachmentContainer {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#BlackBoxAttachmentContainer img{
+	z-index: -1;
+	_z-index: 6900;
+}

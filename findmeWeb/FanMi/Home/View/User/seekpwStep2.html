@@ -1,0 +1,90 @@
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>找回密码</title>
+	<link rel="stylesheet" href="{$Think.const.APP_HOME_STYLE}login.css" type="text/css">
+	<style type="text/css">
+	#seekpw_btn{display:block;width: 307px; height: 34px; border: 0; cursor: pointer;}
+	#seekpw_btn:hover{background-position: 0 -34px;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#seekPw").click(function(){
+				var isSubmit=true;
+				var userpw=$("#userpw");
+				var userpw2=$("#userpw2");
+				var un_regex = new RegExp("^([\u4E00-\uFA29]|[\uE7C7-\uE7F3]|[a-zA-Z0-9_]){3,20}$"); 
+				if(!un_regex.test($.trim(userpw.val())))
+				{
+					isSubmit=false;
+					userpw.next().html("3-20位字符，可由中文、字母、数字和下划线组成").css('color','#EE0000');
+				}
+				if(userpw2.val() !=userpw.val())
+				{
+					isSubmit=false;
+					userpw2.next().html("两次密码输入不一致").css('color','#EE0000');
+					return false;
+				}
+				if(isSubmit)
+				{
+					//提交验证
+					$("#seekmyPw").attr('action',"__MODULE__/User/changePW.html").submit();
+				}
+			});
+		});
+		
+	</script>
+	<div style="clear:both;"></div>	
+	<!-- 登录主体部分start -->
+	<div class="login w990 bc mt10">
+		<div class="login_hd">
+			<h2>找回密码</h2>
+			<b></b>
+		</div>
+		<div class="login_bd">
+			<div class="login_form fl">
+				<form method="post" id="seekmyPw" action="">
+					<ul>
+					<li>
+						<label for="">薪密码：</label>
+						<input type="text" class="txt" name="userpw" id="userpw" maxlength="32"/>
+							<span></span>
+					</li>
+					<li>
+							<label for="">确认密码：</label>
+							<input type="text" class="txt" name="userpw2" id="userpw2" />
+							<span></span>
+						</li>
+						<li>
+							<label for="">&nbsp;</label>
+							<a href="javascript:;" id="seekPw">找回密码</a>
+						</li>
+						<li style="clear:both;"></li>
+					</ul>
+					<input type="hidden" name='userid' value="{$userid}">
+				</form>
+
+				<div class="coagent mt15">
+					<dl>
+						<dt>使用合作网站登录商城：</dt>
+						<dd class="qq"><a href="/User/Oauth/index/type/qq"><span></span>QQ</a></dd>
+						<dd class="weibo"><a href="/User/Oauth/index/type/sina"><span></span>新浪微博</a></dd>
+						<dd class="yi"><a href=""><span></span>网易</a></dd>
+						<dd class="renren"><a href=""><span></span>人人</a></dd>
+						<dd class="qihu"><a href=""><span></span>奇虎360</a></dd>
+						<dd class=""><a href=""><span></span>百度</a></dd>
+						<dd class="douban"><a href=""><span></span>豆瓣</a></dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="guide fl">
+				<h3>还不是商城用户</h3>
+				<p>现在免费注册成为商城用户，便能立刻享受便宜又放心的购物乐趣，心动不如行动，赶紧加入吧!</p>
+				<a href="__MODULE__/user/register" class="reg_btn">返回登录</a>
+				<a href="__MODULE__/user/register" class="reg_btn">免费注册 </a>
+			</div>
+
+		</div>
+	</div>
+	<!-- 登录主体部分end -->
+
+	<div style="clear:both;"></div>
