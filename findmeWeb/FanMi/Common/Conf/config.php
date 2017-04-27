@@ -31,10 +31,10 @@ return array(
 'TMPL_ACTION_SUCCESS'   =>  'Tpl/success', // 默认成功跳转对应的模板文件
 /************** 发邮件的配置 ***************/
 	'MAIL_ADDRESS' => 'dequanLi_edu@126.com',   // 发货人的email
-	'MAIL_FROM' => '泛米科技网络有限公司',      // 发货人姓名
+	'MAIL_FROM' => '德全个人网站',      // 发货人姓名
 	'MAIL_SMTP' => 'smtp.126.com',   //邮件服务器的地址
 	'MAIL_LOGINNAME' => 'dequanLi_edu@126.com',   
-	'MAIL_PASSWORD' => 'li2014112775',
+	'MAIL_PASSWORD' => '***',//邮箱密码
 	// Email验证码有效期
 	'EMAIL_CODE_EXPIRE_TIME' => 3600,
 	// 用来DES加密的密钥
