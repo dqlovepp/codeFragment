@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上中下布局</title>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+		border:0;
+
+		}
+	.clearFloat{
+		zoom:1;
+	}
+	.clearFloat:after{
+		clear:both;
+		content:'';
+		display:block;
+		visibility:hidden;
+		height:0;
+	}
+	body{
+		background-color:#DADADA;
+		}
+	.webWidth{
+		width:100%;
+		text-align:center;
+		line-height:40px;
+		min-width:800px;
+	}	
+	#right{
+		text-align:justify;
+	}
+	#headerLogin{
+		height:30px;
+		background-color:#ccc;
+
+	}
+	#main{
+		padding-top:40px;
+		width:95%;
+		margin:0 auto;
+	}
+	
+	#headerNav{
+		height:40px;
+		background-color:#f00;
+		position:fixed;
+		width:100%;
+		top:30px;
+	}
+	#left{
+		width:200px;
+		min-height:300px;
+		background-color:#3AB6A0;
+		float:left;
+ 		
+	}
+	#right{
+		width:200px;
+		min-height:300px;
+		background-color:#3AB6A0;
+		float:right;
+	}
+	#middle{
+		background-color:#0A3C4D;
+		min-height:600px;
+		overflow:hidden;
+	}
+	#footer{
+		height:40px;
+		background-color:#0f0;
+	}
+	</style>
+</head>
+
+<body>
+	<!--headerLogin start-->
+	<div id="headerLogin" class="webWidth">
+		登录
+	</div>
+	<!--headerLogin end-->
+	<!--头部 start-->
+	<div id="headerNav" class="webWidth">
+		头部
+	</div>
+	<!--头部 end-->
+	<!--主体 start-->
+	<div id="main" class="clearFloat" class="webWidth">
+		<div id="right">
+			右边固定
+		</div>
+		<div id="left">
+			左边固定 
+		</div>
+		<div id="middle">
+			中间自适应 
+		</div>
+		
+	</div>
+	<!--主体 end-->
+	<!--底部 start-->
+	<div id="footer" class="webWidth">
+		底部
+	</div>
+	<!--底部 end-->
+	<script>
+		$(window).scroll(function(){
+			var st = 30;
+			var he = $(this).scrollTop();
+			if(he < st && $("#headerNav").css('top') != 0)
+				{
+					$("#headerNav").css('top',(st-he)+'px')
+				}
+			if(he > st && $("#headerNav").css('top') != 0)
+				{
+					$("#headerNav").css('top',0)
+				}
+		})
+	</script>
+</body>
+</html>

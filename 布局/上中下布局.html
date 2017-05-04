@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上中下布局</title>
+	<style>
+		body{
+			background-color:#DADADA;
+		}
+		*{
+			margin:0;
+			padding:0;
+			border:0;
+
+		}
+		.webWidth{
+			text-align:center;
+			line-height:40px;
+			width:100%;
+			margin:0 auto;
+			min-width:800px;
+		}
+		#header {
+			height:40px;
+			background-color:#f00;
+			position:fixed;
+		}
+		#main {
+			padding-top:40px;
+			width:95%;
+			min-height:600px;
+			background-color:#ff0;
+		}
+		#footer {
+			height:40px;
+			background-color:#0f0;
+		}
+	</style>
+</head>
+
+<body>
+	<!--头部 start-->
+	<div id="header" class="webWidth">
+		头部
+		
+	</div>
+	<!--头部 end-->
+	<!--主体 start-->
+	<div id="main" class="webWidth">
+		主体
+	</div>
+	<!--主体 end-->
+	<!--底部 start-->
+	<div id="footer" class="webWidth">
+		底部
+	</div>
+	<!--底部 end-->
+</body>
+</html>

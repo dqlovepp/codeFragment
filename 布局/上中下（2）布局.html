@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上中下布局</title>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+	body{
+			background-color:#DADADA;
+		}
+	.webWidth{
+			width:100%;
+			text-align:center;
+			line-height:40px;
+			min-width:800px;
+	}
+	*{
+		margin:0;
+		padding:0;
+		border:0;
+
+	}
+	#headerLogin{
+		height:30px;
+		background-color:#999;
+
+	}
+	
+	#headerNav{
+		height:40px;
+		background-color:#f00;
+		position:fixed;
+		width:100%;
+		top:30px;
+	}
+	#main{
+		padding-top:40px;
+		min-height:600px;
+		background-color:#ff0;
+		width:95%;
+		margin:0 auto;
+
+		
+	}
+	#footer{
+		height:40px;
+		background-color:#0f0;
+	}
+	</style>
+</head>
+
+<body>
+	<!--headerLogin start-->
+	<div id="headerLogin" class="webWidth">
+		登录
+	</div>
+	<!--headerLogin end-->
+	<!--头部 start-->
+	<div id="headerNav" class="webWidth">
+		头部
+	</div>
+	<!--头部 end-->
+	<!--主体 start-->
+	<div id="main" class="webWidth">
+		主体
+	</div>
+	<!--主体 end-->
+	<!--底部 start-->
+	<div id="footer" class="webWidth">
+		底部
+	</div>
+	<!--底部 end-->
+	<script>
+		$(window).scroll(function(){
+			var st = 30;
+			var he = $(this).scrollTop();
+			if(he < st && $("#headerNav").css('top') != 0)
+				{
+					$("#headerNav").css('top',(st-he)+'px')
+				}
+			if(he > st && $("#headerNav").css('top') != 0)
+				{
+					$("#headerNav").css('top',0)
+				}
+		})
+	</script>
+</body>
+</html>
