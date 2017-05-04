@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charsetdocument=utf-8" /> 
+	<title>无标题</title>
+	<link rel="stylesheet" type="text/css" href="css/index1_3.css">
+	<script  type="text/javascript">
+     window.onload=function(){
+			var oContainer=document.getElementById('container');
+			var oList=document.getElementById('list');
+			var oButtons=document.getElementById('buttons');
+			var oSpan=document.getElementsByTagName('span');
+			var oPrev=document.getElementById('prev');
+			var oNext=document.getElementById('next');
+			var index=1;
+			function showbutton(){
+				for(var i=0;i<oSpan.length;i++){
+					if(oSpan[i].className=="on")
+					{
+						oSpan[i].className="";
+						break;
+					}
+
+				}
+
+				oSpan[index-1].className="on";
+			}
+			function  animate(num){
+				oList.style.left=parseInt(oList.style.left)+num+"px";
+				if((parseInt(oList.style.left))<-3438){
+					oList.style.left=-1146+"px"
+				}
+				if((parseInt(oList.style.left))>-1146){
+					oList.style.left=-3438+"px"
+				}
+			}
+			oNext.onclick=function(){
+				if(index==3){
+					index=1;
+				}else{
+					index+=1;
+				}
+				 showbutton();
+				 animate(-1146);
+			}
+			oPrev.onclick=function(){
+				if(index==3){
+					index=1;
+				}else{
+					index-=1;
+				}
+				 animate(1146);
+				 showbutton();
+			}
+
+			/*oNext.onclick=function(){
+			oList.style.left=parseInt(oList.style.left)-1146+"px";
+			}
+			oPrev.onclick=function(){
+			oList.style.left=parseInt(oList.style.left)-1146+"px";
+			}*/
+			 
+			/*for(var i=1;i<oSpan;i++){
+				if(this.className="on"){
+                    return;
+				}
+				oSpan[i].onclick=function(){
+					var myindex=parseInt(this.getAttribute("index"));
+					var offeset=-1146*(myindex-index);
+					animate(offeset);
+					myindex=index;
+					showbutton();
+				}
+			}*/
+	}
+
+
+     </script>
+		 
+</head>
+<body>
+ <div id="container">
+ 	<div id="list" style="left:-1146px">
+ 		<img src="images/a_03.jpg">
+ 		<img src="images/a_01.jpg">
+ 		<img src="images/a_02.jpg">
+ 		<img src="images/a_03.jpg">
+ 		<img src="images/a_01.jpg">
+ 	</div>
+    <div id="buttons">
+    	<span index="1" class="on"></span>
+    	<span index="2"></span>
+    	<span index="3"></span>
+    </div>
+     <a id="prev" class="arrow" href="javascript:;">&lt;</a>
+     <a id="next" class="arrow" href="javascript:;">&gt;</a>
+</div>
+     
+ 
+</body>
+</html>
