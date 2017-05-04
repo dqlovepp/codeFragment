@@ -1,0 +1,28 @@
+#mid{
+	width:100%;
+	min-height:600px;
+	background-color:#4795D3;
+	/*background-image:url(../images/login.jpg);
+	background-repeat:no-repeat;*/
+	margin:0px;
+	text-align:center;
+	padding-top:100px
+}
+#mid img{
+	display:inline-block;
+	margin-top:0px;
+}
+#mid h2{
+	margin-top:80px;
+	font-size:26px;
+}
+#loginBox{
+	display:inline-block;
+	width:580px;
+	height:400px;
+	background-color:#fff;
+	border-radius:20px;
+}
+#btn1{
+	margin-top:20px
+}

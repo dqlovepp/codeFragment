@@ -1,0 +1,51 @@
+.show-2 {
+			margin-bottom:20px; 
+			margin-left:30px;
+			width:250px;
+			max-height: 302px;
+			min-height: 302px;
+			overflow: hidden;
+			display:inline-block;
+			border:1px solid #ccc;
+		}
+
+		.show-2 h3 {
+			font-weight:bold;
+			padding-top: 7px;
+			line-height: 33px;
+			text-align: center;
+		}
+		.show-2 p{
+			text-indent:2em;
+		}
+		.show-2 .image {
+			position:relative;
+			border-bottom: 5px solid #1fb554;
+			/*height: 212px;*/
+			width: 250px;
+			overflow: hidden;
+			display: inline-block;
+			vertical-align: middle;
+			transition: 0.4s;
+		}
+
+		.show-2 .image img {
+			width: 300px;
+			vertical-align: bottom;
+		}
+		.show-2 .image span{
+			position:absolute;
+			font-size:30px;
+			color:#fff;
+			top:60px;
+			left:calc(50% - 15px);
+			opacity:0;
+		}
+		.show-2:hover .image {
+			height: 180px;
+			transition: .4s;
+		}
+		.show-2:hover .image span {
+			transition: .4s;
+			opacity:0.5;
+		}

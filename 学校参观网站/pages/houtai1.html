@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>学校参观网站</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/houtai.css">
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #F5F5F5;">
+<!--header start-->
+<div id="header">
+	<div id="nav" class="inlineHake">
+		<div id="nav_left" class="aling-top">
+			<a href="#">School visit website</a>
+		</div>
+		<div id="nav_right" class="aling-top">
+			<ul class="inlineHake">
+				<li class="aling-top">欢迎您超级管理员1号！</li>
+				<li class="aling-top " ><a class="glyphicon glyphicon-log-out" href="login.html">退出</a></li>
+	
+			</ul>
+		</div>1
+</div>
+<!--header end-->
+<!--mid start-->
+<div id="mid" class="inlineHake">
+	<div id="mid_left" class="aling-top">		
+		<div class="mid_left1">
+			<div class="inlineHake mid_left1_1 ">
+				<a class="glyphicon glyphicon-plus a2 " href="#">参观管理</a>
+
+			</div>
+			<div class="inlineHake mid_left1_2 ">
+				<ul class="lef_ul">
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty active">对外参观时间设置</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">参观预约审核</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">参观预约记录</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">参观调整通知</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">参观调整通知列表</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mid_left1">
+			<div class="inlineHake mid_left1_1 ">
+				<a class="glyphicon glyphicon-plus a2 " href="#">教室管理</a>
+				
+			</div>
+			<div class="inlineHake mid_left1_2 ">
+				<ul class="lef_ul">
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">课程表设置</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">教室预约审核</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">教室预约记录</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">教室调整通知</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">教室调整通知列表</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mid_left1">
+			<div class="inlineHake mid_left1_1 ">
+				<a class="glyphicon glyphicon-plus a2 " href="#">会议室管理</a>
+				
+			</div>
+			<div class="inlineHake mid_left1_2 ">
+				<ul class="lef_ul">
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">会议室预约审核</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">会议室调整通知</a>
+					</li>
+					<li>
+						<a href="#"  class="glyphicon glyphicon-star-empty">会议室调整通知列表</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mid_right" class="aling-top" >
+		<div class="mid_right1">
+			<h4>对外参观时间设置</h4>
+		</div>
+		<div class="mid_right2">
+			<div class="row">
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--mid end-->
+
+<!--footer start-->
+<div id="footer">
+	<div id="footerContent">
+		<span>Copyright © 2016  &nbsp;&nbsp;&nbsp;</span>
+		<a href="pages/login.html">管理员登录</a>
+	</div>
+</div>
+<!--footer end-->
+<script type="text/javascript">
+	$(".a2").click(function(){
+			var d = $(this).parents('.mid_left1').index();
+			/*$(".mid_left1_2").eq(d).toggle();*/
+			if ($(".mid_left1_2").eq(d).css("display") == "none") {
+				
+				$(".mid_left1_2").eq(d).show();
+			} else {
+				$(".mid_left1_2").eq(d).hide();
+			}
+		}
+	)
+</script>
+</body>
+</html>
+

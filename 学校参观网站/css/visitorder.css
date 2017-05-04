@@ -1,0 +1,34 @@
+.srk{
+	margin:20px 50px;
+}
+.srk input{
+	display:inline-block;
+	width:70%;
+	margin-left:10px;
+}
+.srk textarea{
+	display:inline-block;
+	width:70%;
+}
+.srk span{
+	/*font-weight:bold;*/
+	font-size:16px;
+	vertical-align:right;
+	display:inline-block;
+	width:80px;
+
+}
+.lcon{
+	font-weight:400;
+	color:#C60605;
+}
+.lcon_ok{
+	font-weight:400;
+	color:#108107;
+}
+.obtn{
+	margin-bottom:40px;
+	width:100%;
+	/*margin:0 auto;*/
+	text-align:center;
+}

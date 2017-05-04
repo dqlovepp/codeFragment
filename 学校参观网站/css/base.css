@@ -1,0 +1,170 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}
+li{
+	list-style-type:none;
+}
+a,a:hover{
+	text-decoration:none;
+}
+body{
+	background-color: #F5F5F5;
+}
+#header{
+	width:100%;
+	height:60px;
+	background-color:#323232;
+}
+.inlineHake{
+	font-size:0;
+	-webkit-text-size-adjust:none;
+}
+.inlineHake *{
+	font-size:14px;
+}
+.aling-top{
+	vertical-align:top;
+}
+#nav{
+	width:1000px;
+	height:60px;
+	margin:0 auto;
+}
+#nav_left{
+	width:300px;
+	height:60px;
+	display:inline-block;
+	margin-right:150px;
+}
+#nav_right{
+	width:auto;
+	height:60px;
+	line-height:60px;
+	display:inline-block;
+}
+#nav_right li{
+	display:inline-block;
+	margin-left:20px;
+	height:60px;
+	padding:0 10px;
+}
+#nav_right ul{
+	height:60px;
+}
+#nav_right ul li{
+	height:60px;
+}
+#nav_right li:first-child{
+	margin-left:0px;
+}
+#nav a{
+		color:#9D9D9D;
+		display:block;
+		height:60px;
+		line-height:60px;
+		width:100%
+
+}
+#nav a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+#nav_left a{
+	font-size:20px;
+	font-weight:bold;
+
+}
+#nav_right a{
+	font-size:16px;
+}
+#nav_right .active{
+	background-color:#E3D8F2;
+
+}
+#nav_right .active a{
+	color:#fff;
+	
+}
+#mid{
+	width:90%;
+	min-height:500px;
+	margin:0 auto;
+	margin-top:10px
+
+}
+#mid_left{
+	width:20%;
+	min-height:300px;
+	background-color:#F8F8F8;
+	border:1px solid #DDDDDD;
+	margin-right:20px;
+	display:inline-block;
+	height:500px;
+}
+#mid_right{
+	width:calc(80% - 24px);
+	min-height:300px;
+	background-color:#fff;
+	border:1px solid #DDDDDD;
+	display:inline-block;
+}
+#mid_leftContent{
+	width:80%;
+	min-height:200px;/*
+	background-color:#f0f;*/
+	margin:0 auto;
+
+
+}
+#mid_leftContent li{
+	width:calc(100% - 10px);
+	height:100px;
+	background-color:#125244;
+	border:5px solid #A06736;
+	margin-top:50px;
+	color: #F00;
+
+}
+#mid_leftContent li a{
+	display:block;
+	width:100%;
+	height:100px;
+	color: #FFF;
+	font-size:18px;
+	text-align:center;
+	padding-top:10px
+}
+#mid_leftContent li a span{
+	font-size:30px;
+	color:#fff; 
+	display:block;
+	margin-bottom:10px
+}
+#mid_leftContent li a:hover{
+	font-size:22px;
+	text-decoration:none;
+}
+#mid_leftContent li a:hover span{
+	font-size:35px;
+}
+#footer{
+	margin-top:20px;
+	width:100%;
+	height:50px;
+	border:1px solid #ccc;
+}
+#footerContent{
+	width:1000px;
+	margin:0 auto;
+	text-align:center;
+	height:50px;
+	line-height:50px
+}
+#footerContent a{
+	color:#333333;
+}
+#footerContent a:hover{
+	color:#165EA8;
+}
