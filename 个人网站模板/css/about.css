@@ -38,8 +38,8 @@
 }
 .headerNav ul li .pic{
 	display:inline-block;
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	background-image:url(../images/12.jpg);
 	z-index:100;
 	border-radius:50%;
