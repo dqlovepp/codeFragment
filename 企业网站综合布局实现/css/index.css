@@ -132,6 +132,7 @@ body{
 	background-color:#fff;
 	font-size:0;
 	min-width:1000px;
+	margin-bottom: 10px;
 	
 }
 .centerLeft,.centerMiddle,.centerRight{
@@ -176,6 +177,9 @@ body{
 	line-height:30px;
 	float:right;
 }
+.title a:hover{
+	color: #C83849;
+}
 .actile{
 	width:310px;
 	padding:10px 30px 10px 10px;
@@ -209,7 +213,6 @@ body{
 .actileList{
 	padding:0 10px;
 	width:310px;
-	min-height:100px;
 }
 .actileList ul li{
 	list-style-image:url(../images/list.jpg);
@@ -258,6 +261,7 @@ body{
 	width:150px;
 	padding:20px 20px;
 	display:inline-block;
+	margin-top:20px;
 	
 }
 .footer1 ul{
