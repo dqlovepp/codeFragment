@@ -138,7 +138,7 @@ body{
 .centerLeft,.centerMiddle,.centerRight{
 	display:inline-block;
 	vertical-align: middle;
-	padding-bottom:10px;
+	 
 }
 .center .centerLeft{
 	width:320px;
@@ -214,6 +214,9 @@ body{
 	padding:0 10px;
 	width:310px;
 }
+.actileList ul{
+	padding-bottom:10px;
+}
 .actileList ul li{
 	list-style-image:url(../images/list.jpg);
 	list-style-position: inside;
@@ -223,6 +226,7 @@ body{
 	height:20px;
 	line-height: 20px;
 	margin-bottom:5px;
+
 }
 .actileList ul li a{
 	text-decoration:none;
